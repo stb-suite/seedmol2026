@@ -1,0 +1,46 @@
+\frametitle{Where to Find Everything}
+\begin{columns}[T]
+		\begin{column}{0.52\textwidth}
+			\metroset{block=fill}
+			\begin{block}{STB-Suite}
+				\small
+				Docs: \texttt{stb-suite.github.io/stb}\\
+				Code: \texttt{github.com/stb-suite/stb}\\[3pt]
+				{\scriptsize
+\begin{verbatim}
+stb-suite        # menu: type a code, e.g. 5.2.1
+stb-<tool> --help
+examples/<code>-<tool>/README.md
+\end{verbatim}
+				}
+				{\scriptsize Every tool has a guide and a runnable example script.}
+			\end{block}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\metroset{block=fill}
+			\begin{block}{Course material}
+				{\footnotesize
+\begin{verbatim}
+aula1/
+  relaxation/  convergence/
+  cohesive_energy/
+aula2/
+  bandas_dos/
+  fatbands_workfunction/
+  adsorption/
+  elastic/
+\end{verbatim}
+				}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.1cm}
+	\metroset{block=fill}
+	\begin{alertblock}{Same layout in every example}
+		\small
+		\begin{itemize}
+			\item \texttt{run/} or \texttt{input/}: start here
+			\item \texttt{siesta\_stage*\_complete/}: SIESTA done, ready for the next STB stage
+			\item \texttt{complete/}: final results, to compare with yours
+		\end{itemize}
+	\end{alertblock}

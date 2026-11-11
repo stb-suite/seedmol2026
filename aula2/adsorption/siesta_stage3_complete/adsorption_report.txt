@@ -1,0 +1,97 @@
+===== ADSORPTION ENERGY REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time  : 2026-11-09 13:30:18
+Directory  : adsorption_run
+Output file: calc.out
+
+[1] REFERENCE ENERGIES
+------------------------------------------------------------
+E_clean_slab : -5833.817714 eV  (adsorption_run/clean_slab/calc.out)
+E_adsorbate (H) : -13.493370 eV  (adsorption_run/adsorbate)
+
+[2] SITE RESULTS: CONFIGURATION COUNT & TABLE
+------------------------------------------------------------
+Site folders found  : 6
+Read successfully   : 6
+Skipped             : 0  (missing calc.out: 0, unparseable energy: 0)
+BSSE coverage       : complete 6, incomplete 0, absent 0  (of 6 site(s))
+
+[BSSE PHYSICS CHECK] E_ads(BSSE) = E_site - E_bsse_slab - E_bsse_adsorbate, where E_bsse_slab/E_bsse_adsorbate are single-point ghost-fragment energies read from 'bsse/<site>/bsse_slab/' and 'bsse/<site>/bsse_adsorbate/' -- written by stb-adsorbBsse (Stage 2) at the site's actual RELAXED geometry (from its finished siesta.XV), not the pre-relaxation guess, since each fragment must be evaluated at the same geometry as the real, relaxed site for the correction to mean anything (the standard Boys-Bernardi counterpoise, applied to both the substrate and the adsorbate). Full explanation: examples/5.8-adsorption/README.md.
+
+Site          | Adsorbate | Height | E_ads(eV) | E_ads_BSSE(eV) | SCF | MaxF(eV/A)
+----------------------------------------------------------------------------------
+site_1_ontop  | H         | 1.50   | -0.092976 | -0.436553      | OK  | 0.0051    
+site_2_ontop  | H         | 1.50   | -0.079449 | -0.028506      | OK  | 0.0082    
+site_3_bridge | H         | 1.50   | -0.107016 | -0.033715      | OK  | 0.0096    
+site_4_bridge | H         | 1.50   | -0.103797 | -0.435903      | OK  | 0.0094    
+site_5_bridge | H         | 1.50   | -0.093022 | -0.033175      | OK  | 0.0072    
+site_6_bridge | H         | 1.50   | -0.102511 | -0.033105      | OK  | 0.0157    
+
+[2b] PHYSICAL DIAGNOSTICS
+------------------------------------------------------------
+Dipole/spin come straight from each site's calc.out (Slab.DipoleCorrection and Spin polarized are already forced by stb-adsorb by default, so these should be non-trivial for a genuine one-sided adsorption site -- '--' means SIESTA never printed the line, e.g. a non-polarized run for the spin column). Bond change compares the closest adsorbate-slab distance at the pre-relaxation guess vs. the relaxed geometry -- positive means the adsorbate moved AWAY from the slab during relaxation, negative means it moved closer (the common case for a real chemisorption bond).
+Site          | Dipole(a.u.) | MagMoment(muB) | Bond Change(Ang)
+----------------------------------------------------------------
+site_1_ontop  | 0.0469       | +1.0000        | -0.1111         
+site_2_ontop  | 0.0086       | +1.0000        | +1.3759         
+site_3_bridge | 0.0058       | +1.0000        | +1.2662         
+site_4_bridge | 0.0477       | +1.0000        | -0.2772         
+site_5_bridge | 0.0086       | +1.0000        | +0.9229         
+site_6_bridge | 0.0016       | +1.0000        | +1.1611         
+
+[2c] BSSE BREAKDOWN
+------------------------------------------------------------
+Raw ghost-fragment energies behind each site's E_ads_BSSE above (see the [BSSE PHYSICS CHECK] note below the [2] table for the full formula) -- Shift is E_ads_BSSE - E_ads (the counterpoise correction itself; positive means the correction made binding LESS favorable, the expected direction), and Shift(%) is that same shift as a fraction of |E_ads| (large values flag a site where BSSE is a significant fraction of the whole binding energy, not just a small correction).
+Site          | E_bsse_slab(eV) | E_bsse_adsorbate(eV) | Shift(eV) | Shift(%)
+-----------------------------------------------------------------------------
+site_1_ontop  | -5833.422830    | -13.544677           | -0.343577 | -369.53 
+site_2_ontop  | -5833.839203    | -13.522824           | +0.050943 | +64.12  
+site_3_bridge | -5833.857912    | -13.526473           | +0.073301 | +68.50  
+site_4_bridge | -5833.434279    | -13.544699           | -0.332106 | -319.96 
+site_5_bridge | -5833.843252    | -13.527679           | +0.059847 | +64.34  
+site_6_bridge | -5833.855124    | -13.525366           | +0.069406 | +67.71  
+
+[3] SUMMARY & PLOT
+------------------------------------------------------------
+Sites analyzed : 6 (skipped: 0)
+Most stable site (uncorrected): site_3_bridge  (E_ads = -0.107016 eV, exothermic (favorable))
+Most stable site (BSSE-corrected): site_1_ontop  (E_ads = -0.436553 eV, exothermic (favorable))
+BSSE correction at that site: -0.343577 eV (uncorrected LCAO adsorption energies systematically over-bind -- expect this to make the energy less negative)
+
+[Saved] Curve data -> adsorption_curve.dat, adsorption_curve.gplot (cd . && gnuplot adsorption_curve.gplot)
+[Saved] Ranking plot -> ./adsorption_ranking.png
+[Saved] Report     -> adsorption_report.txt
+
+[4] APPLY
+------------------------------------------------------------
+[Applied] site_1_ontop -> best_adsorbed_structure.fdf
+
+[5] SUGGESTED NEXT ANALYSES
+------------------------------------------------------------
+  All paths below are relative to the winning site's own folder: adsorption_run/sites/site_1_ontop
+
+  - Bader charges/spin (if you saved '<label>.RHO'):
+      stb-bader --label <label>
+  - Density of states (if you enabled PDOS output, '<label>.PDOS.xml'):
+      stb-dos <label>.PDOS.xml --type total species
+  - Work function (if you saved '<label>.VT' -- SaveTotalPotential/SaveElectrostaticPotential):
+      stb-workfunction -l <label>
+      (also a direct dipole-correction consistency check, since [2b] above already reports the dipole this site's Slab.DipoleCorrection is meant to fix)
+  - Bonding/antibonding character (if you saved a full-BZ '<label>.WFSX' -- WriteWaveFunctions T + an explicit %block WaveFuncKPoints -- plus '<label>.HSX'):
+      stb-coop --label <label> --quantity coop --pair <adsorbate-atom> <surface-atom> --erange <E1> <E2> --sigma <meV>
+
+[6] GIBBS FREE ENERGY (DG) PREP
+------------------------------------------------------------
+  Winning site  : site_1_ontop  (1 adsorbate atom(s))
+  Isolated ref  : adsorption_run/adsorbate  (1 atom(s))
+  ZPE mode (site): local  (isolated reference always uses 'local' -- see --zpe-mode --help)
+  [OK] adsorption_run/gibbs/H_isolated/disp_001..disp_006 (isolated-reference Hessian, local mode)
+  [OK] adsorption_run/gibbs/site_1_ontop/disp_001..disp_006 (site Hessian, adsorbate atoms only, substrate frozen)
+
+  Run SIESTA in every folder written above, then use: stb-adsorbGibbs --dir adsorption_run
+
+[7] LIBRARY WARNINGS
+------------------------------------------------------------
+No library warnings.

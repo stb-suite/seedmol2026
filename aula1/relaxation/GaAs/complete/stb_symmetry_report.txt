@@ -1,0 +1,110 @@
+===== STB-SYMMETRY REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-05 20:18:15
+Input file     : siesta.STRUCT_OUT (format: struct_out)
+Symmetry prec. : symprec=0.01, angle_tolerance=5°
+Output dir     : .
+Compare to     : no
+Write refined  : no
+Interactive view: yes
+
+[1] DIMENSIONALITY & VACUUM AXES
+------------------------------------------------------------
+No vacuum gap detected along any axis -- a genuine 3D bulk structure. SPACE GROUP below is the physically meaningful symmetry classification.
+
+[2] SPACE GROUP
+------------------------------------------------------------
+Property            | Value                  
+---------------------------------------------
+Space group         | F-43m (No. 216)        
+Hall symbol         | F -4 2 3 (Hall No. 512)
+Point group         | -43m                   
+Crystal system      | cubic                  
+Lattice type        | cubic                  
+Pearson symbol      | cF8                    
+Symmetry operations | 24                     
+
+[4] LATTICE
+------------------------------------------------------------
+Quantity | Value                                  
+--------------------------------------------------
+a        | 4.049 Å                                
+b        | 4.049 Å                                
+c        | 4.049 Å                                
+alpha    | 59.91°                                 
+beta     | 59.91°                                 
+gamma    | 59.91°                                 
+Volume   | 46.835 Å³                              
+Formula  | GaAs (Z = 1 formula units in this cell)
+Lattice vectors (Å):
+  a_1:     4.048788      0.003195      0.002259
+  a_2:     2.027161      3.504756      0.002259
+  a_3:     2.027161      1.170382      3.303562
+
+[5] TOLERANCE SENSITIVITY SCAN
+------------------------------------------------------------
+Space-group symprec scan:
+symprec | space group    
+-------------------------
+1e-05   | R3m (No. 160)  
+0.0001  | R3m (No. 160)  
+0.001   | R3m (No. 160)  
+0.01    | F-43m (No. 216)
+0.05    | F-43m (No. 216)
+0.1     | F-43m (No. 216)
+Symmetry changes at symprec >= 0.01: R3m (No. 160) -> F-43m (No. 216).
+
+[6] SYMMETRICALLY DISTINCT SITES: 2
+------------------------------------------------------------
+Wyckoff | Species | n atoms | Site symmetry | Example atom
+----------------------------------------------------------
+1a      | Ga      | 1       | -43m          | 1           
+1d      | As      | 1       | -43m          | 2           
+
+[7] ATOMIC SITES
+------------------------------------------------------------
+Fractional coordinates. Distortion = how far this atom sits from where the detected symmetry operations would exactly place it -- bounded by roughly symprec, 0 means the operations map it exactly.
+Atom | Sp. | Wyckoff | Frac. x  | Frac. y  | Frac. z  | Orbit | Distortion(Å)
+-----------------------------------------------------------------------------
+1    | Ga  | 1a      | 0.000149 | 0.000149 | 0.000149 | 1     | 0.0016       
+2    | As  | 1d      | 0.249846 | 0.249846 | 0.249846 | 2     | 0.0065       
+
+[8] SYMMETRY OPERATIONS (24), in x,y,z notation
+------------------------------------------------------------
+   1: x, y, z
+   2: z, -x-y-z+1/1000, y
+   3: y, x, -x-y-z+1/1000
+   4: -x-y-z+1/1000, z, x
+   5: z, -x-y-z+1/1000, x
+   6: y, x, z
+   7: -x-y-z+1/1000, z, y
+   8: x, y, -x-y-z+1/1000
+   9: -x-y-z+1/1000, x, z
+  10: x, z, y
+  11: z, y, -x-y-z+1/1000
+  12: y, -x-y-z+1/1000, x
+  13: y, z, x
+  14: -x-y-z+1/1000, y, z
+  15: x, -x-y-z+1/1000, y
+  16: z, x, -x-y-z+1/1000
+  17: y, -x-y-z+1/1000, z
+  18: -x-y-z+1/1000, x, y
+  19: x, z, -x-y-z+1/1000
+  20: z, y, x
+  21: -x-y-z+1/1000, y, x
+  22: x, -x-y-z+1/1000, z
+  23: z, x, y
+  24: y, z, -x-y-z+1/1000
+
+[10] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+Symmetry detection uses spglib (via pymatgen's SpacegroupAnalyzer) for the 3D space group and layer group, and pymatgen's PointGroupAnalyzer for the molecular point group -- see the example README for the underlying theory/approximations and their limitations.
+
+[11] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+References     : ./references.bib
+Report         : ./stb_symmetry_report.txt

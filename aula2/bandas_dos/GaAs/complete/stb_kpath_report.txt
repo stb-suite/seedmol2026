@@ -1,0 +1,48 @@
+===== STB-KPATH REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file : structure.fdf
+Vacuum-gap threshold : 10.0 Ang
+Bravais-lattice tolerance (eps) : 0.01
+Symmetry tolerance : symprec=0.01, angle=5.0 deg
+
+[1] STRUCTURE ANALYSIS
+------------------------------------------------------------
+Formula : GaAs
+Dimensionality : 3D
+Bravais lattice : face-centred cubic (FCC)
+Space group : F-43m (No. 216)
+Crystal system : cubic (point group -43m)
+
+[2] HIGH-SYMMETRY K-POINTS
+------------------------------------------------------------
+  \Gamma: ( 0.00000,  0.00000,  0.00000)
+  K    : ( 0.37500,  0.75000,  0.37500)
+  L    : ( 0.00000,  0.50000,  0.00000)
+  U    : ( 0.37500,  0.62500,  0.00000)
+  W    : ( 0.50000,  0.75000,  0.25000)
+  X    : ( 0.50000,  0.50000,  0.00000)
+
+[3] SUGGESTED K-PATH
+------------------------------------------------------------
+Path : \Gamma-X-W-K-\Gamma-L-U-W-L-K | U-X
+Methodology : ASE's dimension-aware Bravais-lattice convention, extending the Setyawan & Curtarolo (2010) 3D scheme to 1D/2D systems via their periodic-axes mask (pbc).
+
+[4] WRITING OUTPUT FILE
+------------------------------------------------------------
+Note: Disjointed path detected (jump from K to U). Including full segment.
+SIESTA path to be written : \Gamma-X-W-K-\Gamma-L-U-W-L-K-U-X
+[OK] SIESTA file 'kpath_bs.fdf' has been created.
+
+[5] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to 'references.bib' (3 entries).
+
+[6] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+Path           : \Gamma-X-W-K-\Gamma-L-U-W-L-K | U-X
+Output file    : kpath_bs.fdf
+References     : references.bib
+Report         : stb_kpath_report.txt

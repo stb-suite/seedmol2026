@@ -1,0 +1,10 @@
+# Machine-readable site table written by stb-adsorb -- see adsorption_prep_report.txt (or the console log) for the full human-readable report.
+
+# SITE_TABLE -- parsed by stb-adsorbAnalysis, do not reorder the columns
+# label                         adsorbate     height    dir
+site_1_ontop                    H             1.5000    adsorption_run/sites/site_1_ontop
+site_2_ontop                    H             1.5000    adsorption_run/sites/site_2_ontop
+site_3_bridge                   H             1.5000    adsorption_run/sites/site_3_bridge
+site_4_bridge                   H             1.5000    adsorption_run/sites/site_4_bridge
+site_5_bridge                   H             1.5000    adsorption_run/sites/site_5_bridge
+site_6_bridge                   H             1.5000    adsorption_run/sites/site_6_bridge

@@ -1,0 +1,25 @@
+# Zincblende GaAs, standard FCC primitive cell: Cartesian axes = cubic axes
+# a = 5.7797 A: volume of the CG-relaxed cell (checks/basis_relaxed/dzp_es005/relax), cubic shape restored
+
+NumberOfSpecies    2
+NumberofAtoms      2
+
+%block ChemicalSpeciesLabel
+ 1   31   Ga
+ 2   33   As
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant 5.7797 Ang
+
+AtomicCoordinatesFormat  Fractional
+
+%block LatticeVectors
+        0.010000000000        0.500000000000        0.500000000000
+        0.500000000000        0.010000000000        0.500000000000
+        0.510000000000        0.510000000000        0.000000000000
+%endblock LatticeVectors
+
+%block AtomicCoordinatesAndAtomicSpecies
+  0.00  0.00  0.00   1
+  0.25  0.25  0.25   2
+%endblock AtomicCoordinatesAndAtomicSpecies

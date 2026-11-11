@@ -1,0 +1,28 @@
+{
+  "schema": "adsorb_fragment_manifest_v1",
+  "site_label": "site_1_ontop",
+  "slab_suffix": "_slab",
+  "adsorbate_suffix": "_ads",
+  "n_substrate": 32,
+  "n_adsorbate": 1,
+  "slab_species": {
+    "B_slab": {
+      "id": "4",
+      "Z": 5,
+      "count": 16
+    },
+    "N_slab": {
+      "id": "5",
+      "Z": 7,
+      "count": 16
+    }
+  },
+  "adsorbate_species": {
+    "H_ads": {
+      "id": "6",
+      "Z": 1,
+      "count": 1
+    }
+  },
+  "adsorbate_formula": "H"
+}

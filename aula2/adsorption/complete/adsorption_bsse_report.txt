@@ -1,0 +1,47 @@
+===== ADSORPTION BSSE (POST-RELAXATION) REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+  Directory       : adsorption_run
+  Output file     : calc.out
+  Save report     : yes -> adsorption_bsse_report.txt
+
+  [WHY THIS STAGE EXISTS] A Boys-Bernardi counterpoise (BSSE) correction is only valid if every fragment is evaluated at the SAME geometry as the real, relaxed site -- not the pre-relaxation initial guess. That relaxed geometry only exists once SIESTA has actually finished relaxing 'sites/site_*/', so BSSE folders can't be written at prep time (stb-adsorb) any more; this stage reads each site's own finished 'siesta.XV' instead. Full explanation: examples/5.8-adsorption/README.md.
+
+[1] SITE SCAN
+------------------------------------------------------------
+Site          | Status
+----------------------
+site_1_ontop  | ready 
+site_2_ontop  | ready 
+site_3_bridge | ready 
+site_4_bridge | ready 
+site_5_bridge | ready 
+site_6_bridge | ready 
+
+  Site folders found : 6
+  Ready (relaxed)    : 6
+  Not yet relaxed    : 0
+
+[2] WRITING BSSE FOLDERS
+------------------------------------------------------------
+  [OK] adsorption_run/bsse/site_1_ontop/bsse_slab/, adsorption_run/bsse/site_1_ontop/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+  [OK] adsorption_run/bsse/site_2_ontop/bsse_slab/, adsorption_run/bsse/site_2_ontop/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+  [OK] adsorption_run/bsse/site_3_bridge/bsse_slab/, adsorption_run/bsse/site_3_bridge/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+  [OK] adsorption_run/bsse/site_4_bridge/bsse_slab/, adsorption_run/bsse/site_4_bridge/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+  [OK] adsorption_run/bsse/site_5_bridge/bsse_slab/, adsorption_run/bsse/site_5_bridge/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+  [OK] adsorption_run/bsse/site_6_bridge/bsse_slab/, adsorption_run/bsse/site_6_bridge/bsse_adsorbate/ (relaxed geometry, spin: yes, dipole: yes, vdw: yes -- inherited from the site)
+
+[3] SUMMARY & NEXT STEPS
+------------------------------------------------------------
+  BSSE folder pair(s) written : 6 of 6 site(s)
+  Run SIESTA in every 'bsse/site_*/bsse_slab/' and 'bsse/site_*/bsse_adsorbate/' folder above, then use stb-adsorbAnalysis for the BSSE-corrected adsorption energy.
+  Report: adsorption_bsse_report.txt
+
+[4] LIBRARY WARNINGS
+------------------------------------------------------------
+Messages emitted by external libraries (sisl) during this run -- collected here instead of interleaved with the report above; harmless in almost every case, but worth a look if a section above looks suspicious.
+[sisl (site site_1_ontop .XV read)] PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action' (x18)
+[sisl (site site_1_ontop .XV read)] PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of' (x12)
+[sisl (site site_1_ontop .XV read)] PyparsingDeprecationWarning: 'infixNotation' deprecated - use 'infix_notation' (x6)
+[sisl (site site_1_ontop .XV read)] PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string' (x8)

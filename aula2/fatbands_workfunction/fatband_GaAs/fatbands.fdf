@@ -1,0 +1,4 @@
+%include calc.fdf
+
+SaveHS T
+WFS.Write.For.Bands T

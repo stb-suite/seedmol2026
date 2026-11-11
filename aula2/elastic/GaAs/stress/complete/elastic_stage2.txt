@@ -1,0 +1,89 @@
+===== ELASTIC PROPERTIES REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Run directory        : elastic_runs
+Date/time            : 2026-11-10 15:41:03
+Method               : stress (--symmetry-method basic)
+Mode                 : 3D (GPa)
+Target log file      : calc.out
+Reference structure  : elastic_runs/reference_structure.fdf (found)
+strain_* folders found: 10
+Tolerances           : eggbox=5.0%, fit-quality(R^2)=0.995, symprec=0.01, angle-tolerance=5.0 deg
+Plot data directory  : elastic_plots/
+Save gnuplot         : yes
+View (matplotlib)    : yes
+[Saved] elastic_plots/xx_fit.dat, elastic_plots/xx_fit.gplot (cd elastic_plots && gnuplot xx_fit.gplot)
+[Saved] elastic_plots/xy_fit.dat, elastic_plots/xy_fit.gplot (cd elastic_plots && gnuplot xy_fit.gplot)
+[Saved] elastic_plots/all_directions_fit.dat, elastic_plots/all_directions_fit.gplot (cd elastic_plots && gnuplot all_directions_fit.gplot)
+
+[1] 3D STIFFNESS MATRIX (GPa)
+------------------------------------------------------------
+      j=1      j=2      j=3      j=4      j=5      j=6      
+i=1 |     92.42    39.41    39.41     0.01     0.02    -0.06
+i=2 |     39.41    92.42    39.41     0.06    -0.01    -0.06
+i=3 |     39.41    39.41    92.42     0.06     0.06     0.01
+i=4 |      0.01     0.06     0.06    65.08    -0.00     0.00
+i=5 |      0.02    -0.01     0.06    -0.00    65.08    -0.02
+i=6 |     -0.06    -0.06     0.01     0.00    -0.02    65.08
+
+[1b] 3D COMPLIANCE MATRIX (1/GPa)
+------------------------------------------------------------
+      j=1        j=2        j=3        j=4        j=5        j=6        
+i=1 |  1.452e-02 -4.342e-03 -4.342e-03  5.245e-06 -2.315e-07  1.096e-05 
+i=2 | -4.342e-03  1.452e-02 -4.342e-03 -9.038e-06  8.478e-06  1.097e-05 
+i=3 | -4.342e-03 -4.342e-03  1.452e-02 -9.038e-06 -1.417e-05 -1.169e-05 
+i=4 |  5.245e-06 -9.038e-06 -9.038e-06  1.537e-02  5.662e-09 -1.787e-09 
+i=5 | -2.315e-07  8.478e-06 -1.417e-05  5.662e-09  1.537e-02  4.929e-06 
+i=6 |  1.096e-05  1.097e-05 -1.169e-05 -1.787e-09  4.929e-06  1.537e-02 
+
+[2] MAIN CONSTANTS
+------------------------------------------------------------
+C11:    92.4 GPa  C22:    92.4 GPa  C33:    92.4 GPa  
+C44:    65.1 GPa  C55:    65.1 GPa  C66:    65.1 GPa  
+C12:    39.4 GPa  C13:    39.4 GPa  C23:    39.4 GPa  
+[INFO] Column(s) yy, zz, yz, xz were not computed directly -- reconstructed from a symmetry-equivalent direction (see [INFO]/[DIAGNOSTIC] lines above) via the actual point-group operation, same convention stb-elasticInputs used to skip generating them.
+
+[3] NUMERICAL QUALITY DIAGNOSTICS
+------------------------------------------------------------
+Tensor symmetry (C vs C^T): max |C_ij - C_ji| = 0.128 GPa (i=1, j=5)  [OK]
+Direction fit quality (stress vs. strain):
+  xx: R^2 = 0.998644 | residual stress =   -0.09 GPa  [OK]
+  xy: R^2 = 0.999936 | residual stress =   -0.01 GPa  [OK]
+Eggbox cross-check (stress vs. energy, same data):
+  xx: stress =    92.42 GPa | energy =    93.38 GPa | diff =  1.05%  [OK]
+  xy: stress =    65.08 GPa | energy =    65.13 GPa | diff =  0.08%  [OK]
+[INFO] All checked direction(s) agree within tolerance -- no indication of eggbox contamination in the stress data.
+
+[4] STABILITY AND PROPERTIES
+------------------------------------------------------------
+Young's Modulus (E)  : 107.64 GPa
+Bulk Modulus    (B)  : 57.08 GPa
+Poisson's Ratio (v)  : 0.186
+Universal Anisotropy Index (A^U): 1.035 (0 = isotropic; larger = more anisotropic)
+
+
+VERDICT: STABLE
+
+[5] SUMMARY & FILES
+------------------------------------------------------------
+Quantity                   | Value     
+---------------------------------------
+C11                        | 92.4 GPa  
+C22                        | 92.4 GPa  
+C33                        | 92.4 GPa  
+C44                        | 65.1 GPa  
+C55                        | 65.1 GPa  
+C66                        | 65.1 GPa  
+C12                        | 39.4 GPa  
+C13                        | 39.4 GPa  
+C23                        | 39.4 GPa  
+E (Young's modulus)        | 107.64 GPa
+B (Bulk modulus)           | 57.08 GPa 
+v (Poisson's ratio)        | 0.186     
+A^U (anisotropy index)     | 1.035     
+Quality warnings (see [3]) | 0         
+VERDICT                    | STABLE    
+
+Full report : elastic_stage2.txt
+Plot data   : elastic_plots/ (3 file pair(s) -- raw fitting data + gnuplot scripts, see [Saved] lines above)

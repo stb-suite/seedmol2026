@@ -1,0 +1,74 @@
+===== STB-SUPERCELL REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-09 09:37:44
+Input file     : primitive_hBN.fdf
+Dimensions     : [4.0, 4.0, 1.0]
+Output file    : structure.fdf
+ML pre-relax   : no
+
+[1] INPUT STRUCTURE
+------------------------------------------------------------
+Formula        : BN
+Atoms          : 2
+Dimensionality : 2D (e.g., a slab or surface)
+Cell a,b,c     : 2.5040, 2.5040, 15.0000 Ang
+Cell angles    : 90.00, 90.00, 120.00 deg
+Cell volume    : 81.4499 Ang^3
+
+[2] STRUCTURE VALIDATION (pre-transform)
+------------------------------------------------------------
+Check              | Result                                                             | Status   
+---------------------------------------------------------------------------------------------------
+Atom proximity     | min. distance = 1.446 Ang (>= 0.5 Ang threshold)                   | [OK]     
+Lattice handedness | right-handed (positive determinant)                                | [OK]     
+Atomic density     | skipped -- vacuum-padded structure (density metric not meaningful) | [SKIPPED]
+Space group    : P-6m2 (No. 187)
+
+[3] SUPERCELL CONSTRUCTION
+------------------------------------------------------------
+Supercell matrix:
+    4   0   0
+    0   4   0
+    0   0   1
+Determinant (cell multiplication factor): 16
+Output formula : BN
+Output atoms   : 32
+Output volume  : 1303.1984 Ang^3
+
+[5] STRUCTURE VALIDATION (post-transform)
+------------------------------------------------------------
+Check              | Result                                                             | Status   
+---------------------------------------------------------------------------------------------------
+Atom proximity     | min. distance = 1.446 Ang (>= 0.5 Ang threshold)                   | [OK]     
+Lattice handedness | right-handed (positive determinant)                                | [OK]     
+Atomic density     | skipped -- vacuum-padded structure (density metric not meaningful) | [SKIPPED]
+Space group    : P-6m2 (No. 187)
+
+[6] SYMMETRY ANALYSIS (BEFORE / AFTER)
+------------------------------------------------------------
+Detailed symmetry analysis (Tolerance: 0.01 Ang):
+Property       | Before         | After         
+------------------------------------------------
+Crystal System | Hexagonal      | Hexagonal     
+Space Group    | P-6m2 (187)    | P-6m2 (187)   
+Layer Group    | p-6m2 (No. 78) | p-6m2 (No. 78)
+Point Group    | -6m2           | -6m2          
+Hall Symbol    | P -6 2         | P -6 2        
+
+[7] WRITING OUTPUT FILE
+------------------------------------------------------------
+[OK] Structure written to 'structure.fdf'.
+
+[8] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to 'references.bib' (2 entries).
+
+[9] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+Input file     : primitive_hBN.fdf
+Output file    : structure.fdf
+References     : references.bib
+Report         : stb_supercell_report.txt

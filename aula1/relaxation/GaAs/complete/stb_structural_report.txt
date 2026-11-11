@@ -1,0 +1,123 @@
+===== STB-STRUCTURAL REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-05 20:21:10
+Input file     : siesta.STRUCT_OUT (format: struct_out)
+Analysis mode  : mean
+RDF            : enabled (r_max = 10.0 Å, bin width = 0.05 Å)
+Output dir     : .
+
+[1] LATTICE
+------------------------------------------------------------
+Quantity | Value      
+----------------------
+a        | 4.049 Å    
+b        | 4.049 Å    
+c        | 4.049 Å    
+alpha    | 59.91°     
+beta     | 59.91°     
+gamma    | 59.91°     
+Volume   | 46.835 Å³  
+Density  | 5.128 g/cm³
+Lattice vectors (Å):
+  a_1:     4.048788      0.003195      0.002259
+  a_2:     2.027161      3.504756      0.002259
+  a_3:     2.027161      1.170382      3.303562
+
+[2] EFFECTIVE COORDINATION NUMBER (weighted)
+------------------------------------------------------------
+As (1 atoms):
+Method    | CN   
+-----------------
+MinDistNN | 4.000
+CrystalNN | 4.000
+BrunnerNN | 4.000
+EconNN    | 4.000
+Ga (1 atoms):
+Method    | CN   
+-----------------
+MinDistNN | 4.000
+CrystalNN | 4.000
+BrunnerNN | 4.000
+EconNN    | 4.000
+Overall average:
+Method    | CN   
+-----------------
+MinDistNN | 4.000
+CrystalNN | 4.000
+BrunnerNN | 4.000
+EconNN    | 4.000
+
+[3] BOND DISTANCES, PER SPECIES PAIR
+------------------------------------------------------------
+Pair    | Avg distance (Å) | N
+------------------------------
+As-Ga   | 2.4775           | 8
+Overall | 2.4775           | 8
+
+[4] BOND ANGLES, PER LIGAND-CENTER-LIGAND TRIPLET
+------------------------------------------------------------
+Triplet  | Avg angle (°) | N 
+-----------------------------
+As-Ga-As | 109.471       | 6 
+Ga-As-Ga | 109.471       | 6 
+Overall  | 109.471       | 12
+
+[5] COORDINATION POLYHEDRON DISTORTION
+------------------------------------------------------------
+BLD: bond-length distortion (%, Baur). BAV: bond-angle variance (deg²),
+from ALL ligand-center-ligand angles (not just Robinson's 12 'cis' angles
+for an ideal octahedron -- there's no general cis/trans split for an
+arbitrary/fractional CN), around the site's own mean angle (not a
+theoretical ideal) -- not directly comparable to textbook BAV values, but
+self-consistent for comparing sites/species within this report. Volume:
+convex hull of the neighbor positions (Å³, needs >= 4 non-coplanar neighbors).
+Species | N atoms | BLD (%) | BAV (deg²) | Volume (Å³)
+------------------------------------------------------
+As      | 1       | 0.000   | 0.013      | 7.806      
+Ga      | 1       | 0.000   | 0.013      | 7.806      
+
+[6] SAME-SPECIES MINIMUM DISTANCE (whole structure, independent of --mode)
+------------------------------------------------------------
+Fewer than 2 atoms of any single species -- nothing to compare.
+
+[7] COORDINATION POLYHEDRON CONNECTIVITY (shared ligands, whole structure)
+------------------------------------------------------------
+Species pair | Corner-sharing | Edge-sharing | Face-sharing
+-----------------------------------------------------------
+As-As        | 0              | 0            | 0           
+Ga-Ga        | 0              | 0            | 0           
+
+[8] RADIAL DISTRIBUTION FUNCTION g(r)
+------------------------------------------------------------
+Full curve written to ./rdf.dat (r_max = 10.0 Å, bin width = 0.05 Å).
+Pair  | First peak r (Å) | g(r)  
+---------------------------------
+Total | 4.025            | 27.606
+As-As | 4.025            | 55.213
+As-Ga | 2.475            | 48.674
+Ga-Ga | 4.025            | 55.213
+
+[9] ATOMIC POSITIONS (Cartesian, Å)
+------------------------------------------------------------
+Atom | Species | x        | y        | z       
+-----------------------------------------------
+1    | Ga      | 0.001210 | 0.000698 | 0.000494
+2    | As      | 2.024531 | 1.168864 | 0.826512
+
+[10] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+Coordination-number/distortion methods used above (see the example README
+for the full theory/formula and limitations of each): Hoppe (1979) for ECoN;
+Baur (1974) for BLD; Robinson et al. (1971) for BAV (modified here, see [5]);
+Zimmermann & Jain for CrystalNN; Brunner & Schwarzenbach for the Brunner
+relative-gap method.
+
+[11] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+RDF data       : ./rdf.dat
+References     : ./references.bib
+Report         : ./stb_structural_report.txt

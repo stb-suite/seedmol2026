@@ -1,0 +1,75 @@
+===== ADSORPTION GIBBS FREE ENERGY REPORT (STAGE 4) =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+  Date/time  : 2026-11-09 13:37:52
+  Directory  : adsorption_run
+  T sweep    : 200.0-800.0 K, step 50.0 K
+  Winning site : site_1_ontop
+  ZPE mode     : local (auto-detected: clean_slab_full/ absent)
+
+[1] ELECTRONIC ENERGIES
+------------------------------------------------------------
+  E_site       = -5847.404060 eV  (adsorption_run/sites/site_1_ontop/calc.out)
+  E_clean_slab = -5833.817714 eV  (adsorption_run/clean_slab/calc.out)
+  E_adsorbate  =   -13.493370 eV  (adsorption_run/adsorbate/calc.out)
+  E_ads (raw)  =    -0.092976 eV
+  E_ads (BSSE) =    -0.436553 eV
+  E_ads used for DG below: BSSE-corrected = -0.436553 eV
+
+[2] VIBRATIONAL/THERMAL TERMS
+------------------------------------------------------------
+  The isolated-adsorbate reference below is treated as a genuine ideal gas molecule (ase.thermochemistry.IdealGasThermo, standard-state pressure = 1 bar) -- full translational + rotational + vibrational ZPE/entropy, not a vibrational-only approximation. See stb-adsorbGibbs --help.
+    Isolated reference (1-atom, monatomic) -- ideal-gas treatment (translation + rotation + vibration):
+        0.15 THz (residual positive) -- excluded as a rigid-body translation/rotation mode
+        0.15 THz (residual positive) -- excluded as a rigid-body translation/rotation mode
+        0.15 THz (residual positive) -- excluded as a rigid-body translation/rotation mode
+  ZPE(site)  = 0.1565 eV   ZPE(isolated ref) = 0.0000 eV   DZPE = +0.1565 eV
+  D0 (ZPE-corrected binding energy) = E_ads + DZPE = -0.2801 eV (T-independent -- the electronic+ZPE binding energy before any entropy contribution)
+
+[3] GIBBS FREE ENERGY vs. TEMPERATURE
+------------------------------------------------------------
+  T =  200.00 K   DZPE = +0.1565 eV   DTS = -0.2187 eV   DS = -1.0937 meV/K (-105.52 J/(mol*K))   DG = -0.0613 eV
+  T =  250.00 K   DZPE = +0.1565 eV   DTS = -0.2827 eV   DS = -1.1306 meV/K (-109.09 J/(mol*K))   DG = +0.0026 eV
+  T =  300.00 K   DZPE = +0.1565 eV   DTS = -0.3468 eV   DS = -1.1560 meV/K (-111.53 J/(mol*K))   DG = +0.0667 eV
+  T =  350.00 K   DZPE = +0.1565 eV   DTS = -0.4108 eV   DS = -1.1736 meV/K (-113.24 J/(mol*K))   DG = +0.1307 eV
+  T =  400.00 K   DZPE = +0.1565 eV   DTS = -0.4744 eV   DS = -1.1860 meV/K (-114.43 J/(mol*K))   DG = +0.1943 eV
+  T =  450.00 K   DZPE = +0.1565 eV   DTS = -0.5377 eV   DS = -1.1948 meV/K (-115.28 J/(mol*K))   DG = +0.2576 eV
+  T =  500.00 K   DZPE = +0.1565 eV   DTS = -0.6005 eV   DS = -1.2011 meV/K (-115.88 J/(mol*K))   DG = +0.3205 eV
+  T =  550.00 K   DZPE = +0.1565 eV   DTS = -0.6630 eV   DS = -1.2054 meV/K (-116.31 J/(mol*K))   DG = +0.3829 eV
+  T =  600.00 K   DZPE = +0.1565 eV   DTS = -0.7251 eV   DS = -1.2085 meV/K (-116.60 J/(mol*K))   DG = +0.4450 eV
+  T =  650.00 K   DZPE = +0.1565 eV   DTS = -0.7869 eV   DS = -1.2106 meV/K (-116.80 J/(mol*K))   DG = +0.5068 eV
+  T =  700.00 K   DZPE = +0.1565 eV   DTS = -0.8483 eV   DS = -1.2119 meV/K (-116.93 J/(mol*K))   DG = +0.5683 eV
+  T =  750.00 K   DZPE = +0.1565 eV   DTS = -0.9095 eV   DS = -1.2127 meV/K (-117.01 J/(mol*K))   DG = +0.6294 eV
+  T =  800.00 K   DZPE = +0.1565 eV   DTS = -0.9704 eV   DS = -1.2130 meV/K (-117.04 J/(mol*K))   DG = +0.6904 eV
+
+[FINAL RESULT] DG(adsorption) = -0.0613 eV at T = 200.0 K (E_ads BSSE-corrected, D0 = -0.2801 eV)
+
+[3b] ESTIMATED DESORPTION TEMPERATURE
+------------------------------------------------------------
+  Linear interpolation/extrapolation of the DG(T) sweep above to its DG=0 crossing (desorption becomes thermodynamically favorable above this temperature). A rough estimate from a harmonic model, not a kinetic prediction -- real desorption also depends on the barrier/prefactor, not just the sign of DG.
+  T_desorption ~= 248.0 K (interpolated within the scanned range)
+
+[3c] DESORPTION KINETICS -- ROUGH ESTIMATE (Eyring-TST)
+------------------------------------------------------------
+  [APPROXIMATION] Assumes desorption has NO kinetic barrier beyond the thermodynamic well depth already computed above (DG_double_dagger = -DG_ads(T)) and a bare TST prefactor kB*T/h (no Vineyard correction from a transition-state vibrational spectrum -- this workflow does not run a NEB/transition-state search). tau_desorb below is therefore a LOWER BOUND on the real desorption time, not a kinetic prediction -- a real barrier can only make desorption SLOWER. See Section 13.6 of examples/5.8-adsorption/README.md for the full derivation and caveats.
+  T =  200.00 K   DG = -0.0613 eV   k_desorb =  1.187e+11 1/s   tau_desorb = 8.43 ps
+  T =  250.00 K   DG = +0.0026 eV   k_desorb =  5.876e+12 1/s   tau_desorb = 170 fs
+  T =  300.00 K   DG = +0.0667 eV   k_desorb =  8.259e+13 1/s   tau_desorb = 12.1 fs
+  T =  350.00 K   DG = +0.1307 eV   k_desorb =  5.558e+14 1/s   tau_desorb = 1.8 fs
+  T =  400.00 K   DG = +0.1943 eV   k_desorb =  2.342e+15 1/s   tau_desorb = ~0 (instant)
+  T =  450.00 K   DG = +0.2576 eV   k_desorb =  7.196e+15 1/s   tau_desorb = ~0 (instant)
+  T =  500.00 K   DG = +0.3205 eV   k_desorb =  1.770e+16 1/s   tau_desorb = ~0 (instant)
+  T =  550.00 K   DG = +0.3829 eV   k_desorb =  3.699e+16 1/s   tau_desorb = ~0 (instant)
+  T =  600.00 K   DG = +0.4450 eV   k_desorb =  6.841e+16 1/s   tau_desorb = ~0 (instant)
+  T =  650.00 K   DG = +0.5068 eV   k_desorb =  1.151e+17 1/s   tau_desorb = ~0 (instant)
+  T =  700.00 K   DG = +0.5683 eV   k_desorb =  1.800e+17 1/s   tau_desorb = ~0 (instant)
+  T =  750.00 K   DG = +0.6294 eV   k_desorb =  2.652e+17 1/s   tau_desorb = ~0 (instant)
+  T =  800.00 K   DG = +0.6904 eV   k_desorb =  3.724e+17 1/s   tau_desorb = ~0 (instant)
+
+  At T = 200.0 K (rough estimate, lower bound): tau_desorb ~= 8.43 ps
+[Saved] adsorption_run/adsorption_gibbs.png
+[Saved] adsorption_run/adsorption_mode_spectrum.png
+[Saved] adsorption_run/adsorption_desorption_kinetics.png (APPROXIMATION -- see [3c] above)
+[Saved] adsorption_run/plot/desorption_kinetics.dat / adsorption_run/plot/desorption_kinetics.gplot (run 'gnuplot desorption_kinetics.gplot' inside 'adsorption_run/plot' -- APPROXIMATION, see [3c] above)
+[Saved] Report -> adsorption_run/adsorption_gibbs_report.txt

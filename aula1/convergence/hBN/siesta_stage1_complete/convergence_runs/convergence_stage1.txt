@@ -1,0 +1,87 @@
+===== STB-CONVERGENCE STAGE 1 REPORT (CONVERGENCE TEST PREP) =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file    : structure.fdf
+Calc template     : calc.fdf
+Pseudo source     : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+Parameter(s)      : meshcutoff, energyshift, kgrid
+Relax steps       : 200
+Output dir        : convergence_runs
+Save report       : yes
+Report file       : convergence_runs/convergence_stage1.txt
+
+[1] INPUT STRUCTURE
+------------------------------------------------------------
+Quantity          | Value     
+------------------------------
+Composition       | B1, N1    
+Total atoms       | 2         
+Coordinate format | fractional
+
+[2] PARAMETER SELECTION
+------------------------------------------------------------
+Parameter   | Range source      | Sweep range                    | Convergence direction   
+-------------------------------------------------------------------------------------------
+meshcutoff  | suggested default | 100 to 400, step 50 (Ry)       | larger = more converged 
+energyshift | suggested default | 0.001 to 0.05, step 0.01 (Ry)  | smaller = more converged
+kgrid       | suggested default | 0.05 to 0.3, step 0.05 (1/Ang) | smaller = more converged
+
+[3] RELAXATION & PARAMETER ENFORCEMENT
+------------------------------------------------------------
+Calc template (before forcing): MD.TypeOfRun=CG  Steps: MD.Steps=150  MD.VariableCell=false
+Forced via 'config_extra.fdf' (prepended -- always wins) in every folder -- the full structure (positions + cell) relaxes at each swept value:
+Directive       | Forced value                                                   
+---------------------------------------------------------------------------------
+MD.TypeOfRun    | CG                                                             
+MD.Steps        | 200                                                            
+MD.VariableCell | true (full relaxation: positions + cell)                       
+Swept parameter | meshcutoff, energyshift, kgrid -- one value per folder, see [5]
+
+[4] PSEUDOPOTENTIALS
+------------------------------------------------------------
+Source            : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+Species | Status
+----------------
+B       | found 
+N       | found 
+[OK] All required pseudopotentials found -- will be copied into every generated folder.
+
+[5] GENERATED CONVERGENCE FOLDERS
+------------------------------------------------------------
+Under 'convergence_runs/<parameter>/':
+Folder                          | Parameter   | Value        | Files                                    
+--------------------------------------------------------------------------------------------------------
+convergence_meshcutoff_100.0000 | meshcutoff  | 100.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_150.0000 | meshcutoff  | 150.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_200.0000 | meshcutoff  | 200.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_250.0000 | meshcutoff  | 250.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_300.0000 | meshcutoff  | 300.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_350.0000 | meshcutoff  | 350.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_meshcutoff_400.0000 | meshcutoff  | 400.0000 Ry  | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0010  | energyshift | 0.0010 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0110  | energyshift | 0.0110 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0210  | energyshift | 0.0210 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0310  | energyshift | 0.0310 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0410  | energyshift | 0.0410 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_energyshift_0.0510  | energyshift | 0.0510 Ry    | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.0500        | kgrid       | grid 58 58 1 | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.1000        | kgrid       | grid 29 29 1 | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.1500        | kgrid       | grid 20 20 1 | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.2000        | kgrid       | grid 15 15 1 | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.2500        | kgrid       | grid 12 12 1 | structure.fdf, calc.fdf, config_extra.fdf
+convergence_kgrid_0.3000        | kgrid       | grid 10 10 1 | structure.fdf, calc.fdf, config_extra.fdf
+
+[6] SUMMARY & NEXT STEPS
+------------------------------------------------------------
+19 folder(s) written under 'convergence_runs' (3 parameter(s)):
+  meshcutoff: 7 folder(s)
+  energyshift: 6 folder(s)
+  kgrid: 6 folder(s)
+Report            : convergence_runs/convergence_stage1.txt
+
+[NOTE] stb-convergenceAnalysis (Stage 2) doesn't yet support this per-parameter layout -- point --dir at one parameter's own subfolder (e.g. 'convergence_runs/meshcutoff'), not 'convergence_runs' itself. A Stage 2 update is planned separately.
+
+Next steps:
+  1. Run SIESTA in every 'convergence_runs/<parameter>/convergence_*/' folder.
+  2. Once they're done: stb-convergenceAnalysis --dir <one parameter's subfolder>

@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Methodology}{9}{0}{1}
+\beamer@sectionintoc {2}{Case I: Layered materials are held together by van der Waals forces. Are they?}{14}{0}{2}
+\beamer@sectionintoc {3}{Case II: A single-element kagome lattice. Stable or not?}{26}{0}{3}
+\beamer@sectionintoc {4}{Case III: A 3D carbon allotrope was synthesized. Is that the whole story?}{39}{0}{4}
+\beamer@sectionintoc {5}{Case IV: Only one member of the family has been synthesized. Is it the best one?}{52}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{65}{0}{6}

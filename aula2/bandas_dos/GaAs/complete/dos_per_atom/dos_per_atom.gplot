@@ -1,0 +1,12 @@
+set terminal pdfcairo enhanced font "Arial,14" size 8,6
+set output "dos_per_atom.pdf"
+set xlabel "Energy (eV)"
+set ylabel "DOS (states/eV)"
+set key outside
+set grid
+plot "Ga_1.dat" using 1:2 with lines lw 2 title "Ga_1: s", \
+     "Ga_1.dat" using 1:3 with lines lw 2 title "Ga_1: p", \
+     "Ga_1.dat" using 1:4 with lines lw 2 title "Ga_1: d", \
+     "As_2.dat" using 1:2 with lines lw 2 title "As_2: s", \
+     "As_2.dat" using 1:3 with lines lw 2 title "As_2: p", \
+     "As_2.dat" using 1:4 with lines lw 2 title "As_2: d"

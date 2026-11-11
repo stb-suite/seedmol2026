@@ -1,0 +1,91 @@
+===== STB-COHESIVE STAGE 1 REPORT (COHESIVE ENERGY PREP) =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file        : structure.fdf
+Pseudo source         : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+K-point density       : 0.2 1/Ang
+Spin (full structure) : non-polarized
+Dispersion (D3)       : ON
+Isolated-atom vacuum  : 20.0 Ang (buffer beyond the outermost atom; BSSE cluster boxes auto-grow with --bsse-cutoff to keep this buffer constant)
+Vacuum-gap threshold  : 10.0 Ang
+BSSE correction       : ON (cutoff=4.0 Ang, multi-site=on)
+BSSE convergence check: ON, scanning 3 cutoffs (6.0, 8.0, 10.0 Ang)
+Symmetry tolerance    : symprec=0.01
+Output directory      : cohesive_runs
+Save report           : yes
+Report file           : cohesive_runs/cohesive_stage1.txt
+
+[1] INPUT STRUCTURE
+------------------------------------------------------------
+Quantity                     | Value        
+--------------------------------------------
+Composition                  | B1, N1       
+Total atoms                  | 2            
+Species (need a calculation) | B, N         
+Coordinate format            | fractional   
+Lattice constant             | 1.0 Ang      
+Cell volume                  | 81.4499 Ang^3
+
+[2] DIMENSIONALITY & K-GRID
+------------------------------------------------------------
+Detected dimensionality: 2D (e.g., a slab or surface)
+Axis | Status  
+---------------
+x    | periodic
+y    | periodic
+z    | vacuum  
+K-grid (full structure): 15 15 1 (density=0.2 1/Ang)
+K-grid (isolated atoms/BSSE clusters): 1 1 1 (Gamma-only, always -- an isolated cluster in a large vacuum box has no dispersion to sample)
+
+[3] FULL STRUCTURE SETUP
+------------------------------------------------------------
+[NOTE] Spin polarization is OFF for the full structure. Every isolated-atom (and BSSE-corrected) reference is always spin-polarized regardless of this setting -- correct for closed-shell/non-magnetic bulk materials, but if this structure is expected to order magnetically, its non-polarized bulk energy will be compared against polarized atomic references, an inconsistent (not just incomplete) comparison. Pass --spin if in doubt.
+Written: cohesive_runs/structure/structure.fdf, cohesive_runs/structure/calc.fdf
+
+[4] ISOLATED ATOMS
+------------------------------------------------------------
+Species | Z | Folder                
+------------------------------------
+B       | 5 | cohesive_runs/atoms/B/
+N       | 7 | cohesive_runs/atoms/N/
+
+[5] BSSE (COUNTERPOISE) CORRECTION
+------------------------------------------------------------
+Species | Site | Ghost nb. | Cutoff  | Used | Folder       
+-----------------------------------------------------------
+B       | --   | 18        | 4.0 Ang | yes  | atoms_bsse/B/
+N       | --   | 18        | 4.0 Ang | yes  | atoms_bsse/N/
+How many coordination shells 'Ghost nb.' actually reaches depends on the material's bond length (see --bsse-cutoff --help) -- the correction is converged once a larger --bsse-cutoff no longer changes the BSSE-corrected energy appreciably; consider checking that before trusting the result (see 'atoms_bsse_check/', generated below).
+Also generated 3 BSSE convergence-check references -- a full cutoff scan from --bsse-convergence-increment's multiple values -- so stb-cohesiveAnalysis can report and plot the cohesive energy vs. cutoff trend instead of a single before/after point. Every box keeps the same 10.0 Ang buffer beyond its own outermost ghost atom (box side = 2*cutoff + --vacuum), regardless of cutoff, so the trend reflects the correction's real cutoff dependence, not a box-size artifact.
+Cutoff   | Box side | Folder                
+--------------------------------------------
+6.0 Ang  | 32.0 Ang | atoms_bsse_check_6.0/ 
+8.0 Ang  | 36.0 Ang | atoms_bsse_check_8.0/ 
+10.0 Ang | 40.0 Ang | atoms_bsse_check_10.0/
+Space group(s) detected (per species, same structure -- should agree): B=P-6m2 (No. 187), N=P-6m2 (No. 187)
+stb-cohesiveAnalysis will auto-detect 'atoms_bsse/' and report both the uncorrected and BSSE-corrected cohesive energy.
+
+[6] PSEUDOPOTENTIALS
+------------------------------------------------------------
+Source            : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+Species | Status
+----------------
+B       | found 
+N       | found 
+[OK] All required pseudopotentials found -- copied into every generated folder.
+
+[7] SUMMARY & NEXT STEPS
+------------------------------------------------------------
+Written under 'cohesive_runs':
+  cohesive_runs/structure/
+  cohesive_runs/atoms/ (2 species)
+  cohesive_runs/atoms_bsse/
+  cohesive_runs/atoms_bsse_check_6.0/
+  cohesive_runs/atoms_bsse_check_8.0/
+  cohesive_runs/atoms_bsse_check_10.0/
+Report            : cohesive_runs/cohesive_stage1.txt
+
+Next steps:
+  1. Run SIESTA in every generated folder (structure/, atoms/<species>/, atoms_bsse/<species>/...).
+  2. Once they're done: cd cohesive_runs && stb-cohesiveAnalysis -o calc.out (or, from elsewhere: stb-cohesiveAnalysis -o calc.out --dir cohesive_runs).

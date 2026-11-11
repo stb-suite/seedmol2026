@@ -1,0 +1,72 @@
+===== STB-TRANSLATE REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time         : 2026-11-07 10:59:47
+Software          : stb 2.0.0, ase 3.29.0, pymatgen 2026.10.24, spglib 2.8.0
+Input             : hBN.cif -- cif (given (-if/-of))
+Output            : structure.fdf -- fdf (given (-of))
+Coordinates       : direct (-cf)
+Report file       : ./stb_translate_report.txt
+
+[1] INPUT
+------------------------------------------------------------
+File              : hBN.cif (705 bytes, 27 lines)
+Format            : cif (given (-if/-of))
+Coordinates       : fractional (CIF always); lattice parameter 1.00 Ang
+Coordinate range  : 0.0000 .. 7.5000 Ang (as read)
+
+[2] STRUCTURE
+------------------------------------------------------------
+Formula           : BN -- reduced BN, Z = 1 formula units
+Atoms             : 2 (2 species)
+label | element | Z | count | fraction (%) | mass (u)
+-----------------------------------------------------
+B     | B       | 5 | 1     | 50.0         | 10.810  
+N     | N       | 7 | 1     | 50.0         | 14.007  
+Cell              : a = 2.50400, b = 2.50400, c = 15.00000 Ang; alpha = 90.000, beta = 90.000, gamma = 120.000 deg
+Lattice vectors (Ang):
+    a:     2.504000     0.000000     0.000000
+    b:    -1.252000     2.168528     0.000000
+    c:     0.000000     0.000000    15.000000
+Volume            : 81.4499 Ang^3 (40.7249 Ang^3/atom); density 0.5060 g/cm^3 (mass 24.817 u)
+Periodicity       : 2D slab/layer -- vacuum (>= 10 Ang gap) along c
+Shortest distance per element pair (minimum image):
+pair | distance (Ang) | atoms   | / covalent | check
+----------------------------------------------------
+B-N  | 1.4457         | B1 - N2 | 0.93       |      
+
+[3] SYMMETRY
+------------------------------------------------------------
+symprec (Ang) | space group | number | operations
+-------------------------------------------------
+0.001         | P-6m2       | 187    | 12        
+0.01          | P-6m2       | 187    | 12        
+0.1           | P-6m2       | 187    | 12        
+Crystal system    : hexagonal; point group -6m2
+Primitive cell    : 2 atoms (symprec 0.01 Ang) -- the input cell is primitive
+
+[4] OUTPUT
+------------------------------------------------------------
+File              : structure.fdf (603 bytes, 24 lines)
+Format            : fdf (given (-of))
+Coordinates       : fractional (AtomicCoordinatesFormat Fractional) (requested, -cf)
+Verification (the written file read back):
+quantity                        | input   | output   | verdict
+--------------------------------------------------------------
+composition                     | BN      | BN       | same   
+atoms                           | 2       | 2        | same   
+volume / formula unit (Ang^3)   | 81.4499 | 81.4499  | same   
+largest cell difference (Ang)   |         | 0.00e+00 | ok     
+largest atom displacement (Ang) |         | 1.41e-08 | ok     
+
+[5] SUMMARY & FILES
+------------------------------------------------------------
+Status            : OK
+Structure         : BN, 2 atoms, P-6m2
+Written           : structure.fdf
+Report            : ./stb_translate_report.txt
+
+[6] WARNINGS
+------------------------------------------------------------
+  none

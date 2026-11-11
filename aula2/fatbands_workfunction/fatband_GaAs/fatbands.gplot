@@ -1,0 +1,24 @@
+set terminal pdfcairo enhanced font "Arial,25" size 8,8
+set output "fatbands.pdf"
+set ylabel "Energy (eV)" font "Arial,28"
+set xlabel "" font "Arial,28"
+set xtics ( "{/Symbol G}" 0.0 ,  "X" 0.581083 ,  "W" 0.871625 ,  "K" 1.07721 ,  "{/Symbol G}" 1.69312 ,  "L" 2.196583 ,  "U" 2.552503 ,  "W" 2.757807 ,  "L" 3.168413 ,  "K" 3.523846 ,  "U" 3.879767 ,  "X" 4.085351 )  font "Arial,28"
+set ytics format "%.1f" font "Arial,28"
+set grid xtics front
+set arrow from 0.0,0.0 to 4.085351 ,0.0 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 0.581083 ,graph 0 to 0.581083,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 0.871625 ,graph 0 to 0.871625,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 1.07721 ,graph 0 to 1.07721,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 1.69312 ,graph 0 to 1.69312,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 2.196583 ,graph 0 to 2.196583,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 2.552503 ,graph 0 to 2.552503,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 2.757807 ,graph 0 to 2.757807,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 3.168413 ,graph 0 to 3.168413,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 3.523846 ,graph 0 to 3.523846,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+set arrow from 3.879767 ,graph 0 to 3.879767,graph 1 nohead dt 2 lc rgb "dark-gray" lw 4 back
+plot "fatbands_As-s.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#1f77b4" title "fatbands_As-s", \
+     "fatbands_As-p.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#d62728" title "fatbands_As-p", \
+     "fatbands_As-d.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#2ca02c" title "fatbands_As-d", \
+     "fatbands_Ga-s.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#9467bd" title "fatbands_Ga-s", \
+     "fatbands_Ga-p.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#ff7f0e" title "fatbands_Ga-p", \
+     "fatbands_Ga-d.dat" using 1:2:(2.5*$3) with points pt 7 ps variable lc rgb "#17becf" title "fatbands_Ga-d"

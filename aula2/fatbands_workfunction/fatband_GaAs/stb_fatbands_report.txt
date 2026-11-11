@@ -1,0 +1,74 @@
+
+===== STB-FATBANDS REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time       : 2026-11-09 09:24:44
+Label           : siesta
+Bands file      : siesta.bands
+WFSX file       : siesta.bands.WFSX
+Shift mode      : vbm
+Gap tolerance   : 0.01 eV
+k-tol (cross-check): 0.001 eV
+Projection      : species_l
+Category filter : all
+Output dir      : .
+Save gnuplot    : yes
+View (matplotlib): no
+
+[1] INPUT DATA
+------------------------------------------------------------
+Quantity                    | Value                                             
+--------------------------------------------------------------------------------
+Fermi energy                | -3.197163 eV                                      
+Spin channels               | 1 (non-polarized)                                 
+Bands x k-points            | 36 x 551                                          
+Orbitals (basis)            | 36                                                
+Geometry/Hamiltonian source | siesta.HSX                                        
+Weight accuracy             | accurate (overlap-weighted norm, real Hamiltonian)
+[OK] .bands / .WFSX k-point and orbital-count correspondence verified (sampled eigenvalue cross-check, tol=0.001 eV).
+
+[2] BAND GAP ANALYSIS (k-path)
+------------------------------------------------------------
+Quantity     | Value                                      
+----------------------------------------------------------
+VBM          | -3.389300 eV (k = 0.000000)                
+CBM          | -3.028000 eV (k = 0.000000)                
+Indirect gap | 0.361300 eV (fundamental: CBM - VBM, any k)
+Direct gap   | 0.361300 eV (same-k minimum, k = 0.000000) 
+Gap type     | Direct                                     
+
+[3] ORBITAL PROJECTION
+------------------------------------------------------------
+Categories found : 6 (As-s, As-p, As-d, Ga-s, Ga-p, Ga-d)
+Category | Orbitals | Mean weight | Max weight
+----------------------------------------------
+As-s     | 2        | 0.0556      | 1.3372    
+As-p     | 6        | 0.1667      | 0.9280    
+As-d     | 10       | 0.2778      | 1.0084    
+Ga-s     | 2        | 0.0556      | 1.5793    
+Ga-p     | 6        | 0.1667      | 0.9602    
+Ga-d     | 10       | 0.2778      | 1.3849    
+
+[4] WRITING OUTPUT FILES
+------------------------------------------------------------
+[OK] Data written: 6 file(s) (fatbands_As-s.dat, fatbands_As-p.dat, fatbands_As-d.dat, fatbands_Ga-s.dat, fatbands_Ga-p.dat, fatbands_Ga-d.dat).
+[OK] Gnuplot script written to './fatbands.gplot'.
+
+[5] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+
+[6] SUMMARY & FILES
+------------------------------------------------------------
+Status          : OK
+Best (indirect) gap: 0.361300 eV (Direct).
+Data file       : ./fatbands_As-s.dat
+Data file       : ./fatbands_As-p.dat
+Data file       : ./fatbands_As-d.dat
+Data file       : ./fatbands_Ga-s.dat
+Data file       : ./fatbands_Ga-p.dat
+Data file       : ./fatbands_Ga-d.dat
+Gnuplot script  : ./fatbands.gplot
+References      : ./references.bib
+Report          : ./stb_fatbands_report.txt

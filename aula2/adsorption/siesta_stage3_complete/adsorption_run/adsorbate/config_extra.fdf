@@ -1,0 +1,6 @@
+# Auto-generated -- keeps the cell fixed (see examples/5.8-adsorption/
+# README.md for why).
+MD.VariableCell false
+# Auto-generated -- forces the Grimme DFT-D3 dispersion correction (see
+# write_reference_folder's force_vdw docstring for why).
+DFTD3                   .true.

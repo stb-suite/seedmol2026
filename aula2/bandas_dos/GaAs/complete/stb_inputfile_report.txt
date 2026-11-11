@@ -1,0 +1,53 @@
+===== STB-INPUTFILE REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file : structure.fdf
+Mode selected  : bands
+Pseudopotentials : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+
+[1] TEMPLATE SELECTION
+------------------------------------------------------------
+Template : Bands
+DFT-D3 (van der Waals) correction : DISABLED
+Spin polarization : NON-POLARIZED
+Species found : Ga, As
+
+[2] STRUCTURE VALIDATION
+------------------------------------------------------------
+Check                  | Result                                           | Status
+----------------------------------------------------------------------------------
+Atom proximity         | min. distance = 2.478 Ang (>= 0.5 Ang threshold) | [OK]  
+Lattice handedness     | right-handed (positive determinant)              | [OK]  
+Atomic density         | 0.0427 atoms/Ang^3 (within [0.01, 0.15])         | [OK]  
+NumberOfAtoms header   | declared 2, matches actual atom count            | [OK]  
+NumberOfSpecies header | declared 2, matches actual species count         | [OK]  
+Space group : F-43m (No. 216)
+Crystal system : cubic (point group -43m)
+
+[3] K-GRID
+------------------------------------------------------------
+Calculating K-grid (density = 0.2 1/Ang) ...
+Suggested K-grid : 10 10 10
+
+[4] WRITING INPUT FILE
+------------------------------------------------------------
+[OK] File 'calc.fdf' generated successfully.
+
+[5] REFERENCES
+------------------------------------------------------------
+Pseudopotential source : bundled bank 'dojo'
+[OK] Citations for the methods used in this run written to 'references.bib' (5 entries).
+
+[6] PSEUDOPOTENTIALS
+------------------------------------------------------------
+[OK] Copied: Ga.psml
+[OK] Copied: As.psml
+All pseudopotentials copied successfully.
+
+[7] SUMMARY & FILES
+------------------------------------------------------------
+Status       : OK
+Input file   : calc.fdf
+References   : references.bib
+Report       : stb_inputfile_report.txt

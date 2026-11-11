@@ -1,0 +1,67 @@
+===== STB-COHESIVEANALYSIS REPORT (COHESIVE ENERGY) =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Results directory      : cohesive_runs
+Target log file        : calc.out
+Force tolerance        : 0.05 eV/Ang
+BSSE reference          : found
+BSSE convergence check  : not found
+BSSE cutoff scan        : found, 3 point(s) (6.0, 8.0, 10.0 Ang)
+Save report             : yes
+View (matplotlib)       : yes
+Report file             : cohesive_runs/cohesive_results.dat
+
+[1] INPUT STRUCTURE
+------------------------------------------------------------
+Parsed from structure.fdf in 'structure/'. Each species with a nonzero count needs its own isolated-atom reference in 'atoms/' (see [2]).
+Quantity    | Value 
+--------------------
+Composition | B1, N1
+Total atoms | 2     
+
+[2] ENERGY EXTRACTION
+------------------------------------------------------------
+Full structure energy   :  -364.562158 eV
+SCF convergence          : converged after 9 iteration(s)
+Residual force           : 0.0002 eV/Ang (within --force-tolerance 0.05 eV/Ang)
+
+Isolated-atom (one atom in vacuum) reference energies used in the cohesive-energy sum below. The 'Delta' columns show the shift each correction introduces relative to the uncorrected reference -- BSSE removes an artificial over-stabilization of the isolated atom (it's computed with a smaller effective basis than it has inside the solid), so a positive Delta here is the expected, physically correct direction.
+Species | Uncorrected (eV) | BSSE-corrected (eV) | Delta BSSE (eV) | BSSE check (eV) | Delta check (eV)
+-------------------------------------------------------------------------------------------------------
+B       | -72.719175       | -73.399577          | -0.680402       | --              | --              
+N       | -275.844460      | -277.101841         | -1.257381       | --              | --              
+
+[3] COHESIVE ENERGY RESULTS
+------------------------------------------------------------
+Sum of isolated atoms   :  -348.563635 eV
+Bulk structure energy   :  -364.562158 eV
+
+Cohesive energy = (Bulk structure energy - Sum of isolated atoms) / Total atoms. More negative means a more strongly bound structure. 'Delta vs Uncorrected' isolates the effect of each correction alone on the final per-atom result.
+Method         | Total (eV) | Per atom (eV/atom) | Delta vs Uncorrected (eV/atom)
+---------------------------------------------------------------------------------
+Uncorrected    | -15.9985   | -7.9993            | (reference)                   
+BSSE-corrected | -14.0607   | -7.0304            | +0.9689                       
+BSSE correction per atom: +0.9689 eV/atom (uncorrected LCAO cohesive energies systematically over-bind -- expect this to make the energy less negative)
+
+[3b] BSSE CUTOFF CONVERGENCE SCAN
+------------------------------------------------------------
+Cohesive energy per atom (BSSE-corrected) at each scanned cutoff -- from stb-cohesive's --bsse-convergence-increment given multiple values. The correction is converged once these stop changing appreciably as the cutoff grows; if it's still trending by the last point, increase --bsse-cutoff/--bsse-convergence-increment further.
+Cutoff         | Per atom (eV/atom) | Delta vs base BSSE (eV/atom)
+------------------------------------------------------------------
+4.0 Ang (base) | -7.0304            | (reference)                 
+6.0 Ang        | -7.0119            | +0.0185                     
+8.0 Ang        | -7.0093            | +0.0210                     
+10.0 Ang       | -7.0089            | +0.0215                     
+Last step change: +0.0005 eV/atom (cutoff 8.0 -> 10.0 Ang) -- small means converged, large means keep increasing the cutoff.
+
+[4] CORRECTION PLOT
+------------------------------------------------------------
+[OK] Saved: cohesive_runs/cohesive_correction.png (shown interactively via --view)
+
+[5] SUMMARY & FILES
+------------------------------------------------------------
+Cohesive energy per atom (uncorrected)  : -7.9993 eV/atom
+Cohesive energy per atom (BSSE-corrected): -7.0304 eV/atom
+Report      : cohesive_runs/cohesive_results.dat
+Plot        : cohesive_runs/cohesive_correction.png

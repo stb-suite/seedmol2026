@@ -1,0 +1,19 @@
+# Desorption kinetics for site_1_ontop -- ROUGH Eyring-TST estimate
+# (barrierless-desorption assumption: DG_double_dagger = -DG_ads(T),
+# bare kB*T/h prefactor, no Vineyard correction) -- see 'examples/
+# 5.8-adsorption/README.md' Section 13.6 or the report's [3c] section
+# for the full caveat. tau_desorb is a LOWER BOUND, not a prediction.
+# 1:T(K) 2:DG_ads(eV) 3:k_desorb(1/s) 4:tau_desorb(s)
+200.0000  -0.061334  1.186597e+11  8.427458e-12
+250.0000  0.002595  5.875918e+12  1.701862e-13
+300.0000  0.066729  8.259250e+13  1.210764e-14
+350.0000  0.130701  5.557907e+14  1.799239e-15
+400.0000  0.194348  2.341874e+15  4.270084e-16
+450.0000  0.257605  7.196025e+15  1.389656e-16
+500.0000  0.320462  1.769735e+16  5.650563e-17
+550.0000  0.382930  3.698845e+16  2.703547e-17
+600.0000  0.445035  6.840752e+16  1.461828e-17
+650.0000  0.506803  1.151446e+17  8.684730e-18
+700.0000  0.568265  1.799919e+17  5.555805e-18
+750.0000  0.629446  2.652022e+17  3.770707e-18
+800.0000  0.690370  3.724394e+17  2.685001e-18

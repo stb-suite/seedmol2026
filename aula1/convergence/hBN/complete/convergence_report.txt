@@ -1,0 +1,88 @@
+===== STB-CONVERGENCEANALYSIS STAGE 2 REPORT (CONVERGENCE TEST ANALYSIS) =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time         : 2026-11-06 13:46:49
+Directory         : convergence_runs
+Output filename   : calc.out
+Energy tolerance  : 0.01 eV/atom
+Volume tolerance  : 0.5 %
+Force tolerance   : 0.05 eV/Ang (data-quality flag only)
+Output dir        : .
+Save report       : yes
+Save gnuplot      : yes
+View (matplotlib) : yes
+Report file       : ./convergence_report.txt
+
+[1] DISCOVERED PARAMETER SWEEPS
+------------------------------------------------------------
+Parameter   | Folders found
+---------------------------
+meshcutoff  | 7            
+energyshift | 6            
+kgrid       | 6            
+
+[2.1] MESHCUTOFF SWEEP
+------------------------------------------------------------
+Folders found: 7 (skipped: 0 unreadable/incomplete)  |  Increasing meshcutoff improves accuracy: True
+Value    | E/atom(eV)  | |Delta E/atom| | Volume(Ang^3) | |Delta V/V|(%) | Quality
+----------------------------------------------------------------------------------
+100.0000 | -182.308610 | --             | 82.8095       | --             | OK     
+150.0000 | -182.308816 | 0.000206       | 82.7919       | 0.0212         | OK     
+200.0000 | -182.308617 | 0.000199       | 82.8780       | 0.1039         | OK     
+250.0000 | -182.308767 | 0.000150       | 82.8841       | 0.0074         | OK     
+300.0000 | -182.309010 | 0.000243       | 82.8755       | 0.0104         | OK     
+350.0000 | -182.309212 | 0.000202       | 82.8599       | 0.0188         | OK     
+400.0000 | -182.309271 | 0.000059       | 82.8499       | 0.0121         | OK     
+Energy converged at: meshcutoff = 150.0000 (or higher, |Delta E/atom| < 0.01 eV)
+Structure converged at: meshcutoff = 150.0000 (or higher, |Delta V/V| < 0.5%, relaxed cell)
+Energy and structure agree on the same converged value.
+
+[2.2] ENERGYSHIFT SWEEP
+------------------------------------------------------------
+Folders found: 6 (skipped: 0 unreadable/incomplete)  |  Increasing energyshift improves accuracy: False
+Value  | E/atom(eV)  | |Delta E/atom| | Volume(Ang^3) | |Delta V/V|(%) | Quality
+--------------------------------------------------------------------------------
+0.0010 | -182.328278 | --             | 83.9063       | --             | OK     
+0.0110 | -182.285194 | 0.043084       | 82.9619       | 1.1255         | OK     
+0.0210 | -182.278444 | 0.006750       | 82.5625       | 0.4815         | OK     
+0.0310 | -182.217333 | 0.061110       | 81.4499       | 1.3475         | OK     
+0.0410 | -182.133373 | 0.083961       | 81.4499       | 0.0000         | OK     
+0.0510 | -182.031904 | 0.101468       | 80.3371       | 1.3663         | OK     
+[WARNING] No point met the 0.01 eV/atom energy tolerance within the scanned range; consider extending it.
+[WARNING] No point met the 0.5% relaxed-volume tolerance within the scanned range; consider extending it.
+
+[2.3] KGRID SWEEP
+------------------------------------------------------------
+Folders found: 6 (skipped: 0 unreadable/incomplete)  |  Increasing kgrid improves accuracy: False
+Value  | E/atom(eV)  | |Delta E/atom| | Volume(Ang^3) | |Delta V/V|(%) | Quality
+--------------------------------------------------------------------------------
+0.0500 | -182.308932 | --             | 82.8763       | --             | OK     
+0.1000 | -182.308932 | 0.000000       | 82.8763       | 0.0000         | OK     
+0.1500 | -182.308932 | 0.000000       | 82.8763       | 0.0001         | OK     
+0.2000 | -182.308932 | 0.000000       | 82.8763       | 0.0001         | OK     
+0.2500 | -182.308933 | 0.000001       | 82.8763       | 0.0001         | OK     
+0.3000 | -182.308938 | 0.000004       | 82.8762       | 0.0001         | OK     
+Energy converged at: kgrid = 0.2500 (or lower, |Delta E/atom| < 0.01 eV)
+Structure converged at: kgrid = 0.2500 (or lower, |Delta V/V| < 0.5%, relaxed cell)
+Energy and structure agree on the same converged value.
+
+[3] OUTPUT FILES
+------------------------------------------------------------
+[OK] Curve data + gnuplot script written: 6 file(s).
+  - ./meshcutoff_convergence.dat
+  - ./meshcutoff_convergence.gplot
+  - ./energyshift_convergence.dat
+  - ./energyshift_convergence.gplot
+  - ./kgrid_convergence.dat
+  - ./kgrid_convergence.gplot
+  Render with: cd . && gnuplot <parameter>_convergence.gplot
+
+[4] SUMMARY & NEXT STEPS
+------------------------------------------------------------
+Parameter   | Energy-converged | Structure-converged | Recommended  
+--------------------------------------------------------------------
+meshcutoff  | 150.0000         | 150.0000            | 150.0000     
+energyshift | --               | --                  | NOT CONVERGED
+kgrid       | 0.2500           | 0.2500              | 0.2500       
+Report            : ./convergence_report.txt

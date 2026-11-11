@@ -1,0 +1,53 @@
+===== STB-WORKFUNCTION REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-05 10:01:25
+Label          : siesta
+Fermi source   : siesta.out
+Grid file      : siesta.VT
+Axis           : 2 (auto-detected from siesta.XV/.fdf)
+Asymmetric tol : 0.05 eV
+Output dir     : .
+Save gnuplot   : yes
+View (matplotlib): no
+
+[1] FERMI ENERGY
+------------------------------------------------------------
+E_F = -3.949401 eV (source: siesta.out)
+
+[2] VACUUM AXIS DETECTION
+------------------------------------------------------------
+Axis used: 2 (z)
+auto-detected from siesta.XV/.fdf
+
+[3] VACUUM PLATEAU DETECTION
+------------------------------------------------------------
+Region | z (Å)  | Mean potential (eV) | Std (eV) | Noisy?
+---------------------------------------------------------
+1      | 0.0000 | -0.124005           | 0.000014 | no    
+
+[4] WORK FUNCTION RESULTS
+------------------------------------------------------------
+Vacuum size (axis 2) ~ 8.80 Å  |  Slab thickness ~ 0.00 Å
+Quantity      | Value     
+--------------------------
+Vacuum level  | -0.1240 eV
+Work Function | 3.8254 eV 
+
+[5] OUTPUT DATA & PLOTS
+------------------------------------------------------------
+[OK] Data written to './workfunction_data.dat'.
+[OK] Gnuplot script written to './workfunction.gplot'.
+
+[6] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+
+[7] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+References     : ./references.bib
+Data           : ./workfunction_data.dat
+Gnuplot script : ./workfunction.gplot
+Report         : ./stb_workfunction_report.txt

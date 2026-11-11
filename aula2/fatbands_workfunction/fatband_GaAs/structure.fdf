@@ -1,0 +1,22 @@
+NumberOfSpecies 2
+NumberOfAtoms 2
+
+%block ChemicalSpeciesLabel
+  1  31  Ga
+  2  33  As
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant 1.0 Ang
+
+%block LatticeVectors
+  4.048796192  0.003205186  0.002266403
+  2.027173874  3.504757756  0.002266411
+  2.027173869  1.170389377  3.303561890
+%endblock LatticeVectors
+
+AtomicCoordinatesFormat Fractional
+
+%block AtomicCoordinatesAndAtomicSpecies
+  0.000148431  0.000148429  0.000148449  1
+  0.249847077  0.249847117  0.249847117  2
+%endblock AtomicCoordinatesAndAtomicSpecies

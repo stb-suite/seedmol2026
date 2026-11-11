@@ -1,0 +1,67 @@
+===== STB-ADSORB REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+  Structure       : structure.fdf
+  Calc template   : calc.fdf
+  Pseudo dir      : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+  Output dir      : adsorption_run
+  Adsorbate: H (1 atom(s))
+  Site type       : all
+  Height          : 1.50 Ang
+  Both sides      : no
+  ML pre-relax    : no
+  ML rank         : no
+  Vacuum gap/box  : 10.0 / 20.0 Ang
+  symprec         : 0.01
+  Force spin      : yes -> Spin polarized (isolated ref + site folders)
+  Dipole correction: yes -> Slab.DipoleCorrection T (clean_slab/ + site folders, not the isolated ref)
+  van der Waals   : yes -> DFTD3 T (clean_slab/, isolated ref, and site folders, always on)
+  Save report     : yes -> adsorption_run/adsorption_prep_report.txt
+
+[1] REFERENCE FOLDERS
+------------------------------------------------------------
+  Slab already centered in the vacuum gap (no boundary-wrap risk).
+  [OK] adsorption_run/clean_slab
+  [NOTE] 'H': its isolated reference is forced spin-polarized below (many atoms/molecules have a non-zero ground-state spin, e.g. O, N), and so is every 'sites/site_*/' folder written in [4] (pass --no-force-spin to use --calc's own Spin setting there instead). 'clean_slab/' still uses --calc's own Spin setting unmodified (no adsorbate present, no clear universal reason to force it).
+  [OK] adsorption_run/adsorbate (Gamma-only, spin-polarized, 20.0 Ang box)
+
+[2] ADSORPTION SITES: FINDING & COUNT
+------------------------------------------------------------
+Site type | Raw candidates | After symm. reduction | Reduced away (equivalent)
+------------------------------------------------------------------------------
+ontop     | 32             | 2                     | 30                       
+bridge    | 96             | 4                     | 92                       
+hollow    | 0              | 0                     | 0                        
+TOTAL     | 128            | 6                     | 122                      
+  [Saved] adsorption_run/sites/adsorption_sites.png (each number is the site_N this run's own --height/--symprec/--site-type would write it as with --all-sites -- pass that number - 1 to --site-index to pick just that one)
+  [Saved] adsorption_run/sites/site_positions.dat (6 position(s), fractional -- feed it back via --positions-file to reuse/hand-pick among exactly these sites in a future run)
+  Selected: 6 of 6 symmetrically distinct 'all' site(s) (--all-sites)
+  Configuration count : 6 site(s) x 1 height(s) x 1 adsorbate(s) = 6 site folder(s), plus clean_slab/ and 1 adsorbate reference(s)
+
+[3] ML PRE-SCREENING
+------------------------------------------------------------
+  Not requested (pass --ml-rank to pre-screen every candidate with MACE-MP-0 before committing to real SIESTA folders).
+
+[4] WRITING SITE FOLDERS
+------------------------------------------------------------
+  [OK] adsorption_run/sites/site_1_ontop
+  [OK] adsorption_run/sites/site_2_ontop
+  [OK] adsorption_run/sites/site_3_bridge
+  [OK] adsorption_run/sites/site_4_bridge
+  [OK] adsorption_run/sites/site_5_bridge
+  [OK] adsorption_run/sites/site_6_bridge
+
+[5] SUMMARY & NEXT STEPS
+------------------------------------------------------------
+  6 site folder(s) written under 'adsorption_run/sites'.
+  Site table      : adsorption_run/sites/adsorption_sites.txt (machine-readable, read by stb-adsorbAnalysis)
+  Site positions  : adsorption_run/sites/site_positions.dat (feed back via --positions-file)
+  Report          : adsorption_run/adsorption_prep_report.txt
+  Run SIESTA in 'clean_slab/', every 'adsorbate*/' and every 'sites/site_*/' folder. For a BSSE (counterpoise) -corrected adsorption energy, run stb-adsorbBsse next -- it needs each site's RELAXED geometry, so it can only run once these SIESTA jobs are finished, not now. Then use stb-adsorbAnalysis (with or without BSSE results).
+
+[6] LIBRARY WARNINGS
+------------------------------------------------------------
+Messages emitted by external libraries (pymatgen, MACE/torch) during this run -- collected here instead of interleaved with the report above; harmless in almost every case, but worth a look if a section above looks suspicious.
+[pymatgen AdsorbateSiteFinder] DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly. (x4)
+[pymatgen AdsorbateSiteFinder] DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly. (x3)

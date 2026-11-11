@@ -1,0 +1,163 @@
+Neighbors of:     1 B at:  26.4562 26.4562 26.4562
+   19 N_ghost               1.4457  Ang. Really at:  26.4562 29.1881 26.4562
+   11 N_ghost               1.4457  Ang. Really at:  28.8221 25.0902 26.4562
+    2 N_ghost               1.4457  Ang. Really at:  24.0902 25.0902 26.4562
+   13 B_ghost               2.5040  Ang. Really at:  28.8221 22.3582 26.4562
+   17 B_ghost               2.5040  Ang. Really at:  28.8221 30.5541 26.4562
+    7 B_ghost               2.5040  Ang. Really at:  24.0902 30.5541 26.4562
+    3 B_ghost               2.5040  Ang. Really at:  24.0902 22.3582 26.4562
+    9 B_ghost               2.5040  Ang. Really at:  21.7243 26.4562 26.4562
+   18 B_ghost               2.5040  Ang. Really at:  31.1880 26.4562 26.4562
+   16 N_ghost               2.8914  Ang. Really at:  31.1880 29.1881 26.4562
+    8 N_ghost               2.8914  Ang. Really at:  21.7243 29.1881 26.4562
+   14 N_ghost               2.8914  Ang. Really at:  26.4562 20.9923 26.4562
+Neighbors of:     2 N_ghost at:  24.0902 25.0902 26.4562
+    9 B_ghost               1.4457  Ang. Really at:  21.7243 26.4562 26.4562
+    3 B_ghost               1.4457  Ang. Really at:  24.0902 22.3582 26.4562
+    1 B                     1.4457  Ang. Really at:  26.4562 26.4562 26.4562
+    8 N_ghost               2.5040  Ang. Really at:  21.7243 29.1881 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+    4 N_ghost               2.5040  Ang. Really at:  19.3584 25.0902 26.4562
+    5 N_ghost               2.5040  Ang. Really at:  21.7243 20.9923 26.4562
+   14 N_ghost               2.5040  Ang. Really at:  26.4562 20.9923 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+    7 B_ghost               2.8914  Ang. Really at:  24.0902 30.5541 26.4562
+   13 B_ghost               2.8914  Ang. Really at:  28.8221 22.3582 26.4562
+Neighbors of:     3 B_ghost at:  24.0902 22.3582 26.4562
+    5 N_ghost               1.4457  Ang. Really at:  21.7243 20.9923 26.4562
+    2 N_ghost               1.4457  Ang. Really at:  24.0902 25.0902 26.4562
+   14 N_ghost               1.4457  Ang. Really at:  26.4562 20.9923 26.4562
+    9 B_ghost               2.5040  Ang. Really at:  21.7243 26.4562 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+   13 B_ghost               2.5040  Ang. Really at:  28.8221 22.3582 26.4562
+    4 N_ghost               2.8914  Ang. Really at:  19.3584 25.0902 26.4562
+   11 N_ghost               2.8914  Ang. Really at:  28.8221 25.0902 26.4562
+Neighbors of:     4 N_ghost at:  19.3584 25.0902 26.4562
+    9 B_ghost               1.4457  Ang. Really at:  21.7243 26.4562 26.4562
+    8 N_ghost               2.5040  Ang. Really at:  21.7243 29.1881 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+    5 N_ghost               2.5040  Ang. Really at:  21.7243 20.9923 26.4562
+    3 B_ghost               2.8914  Ang. Really at:  24.0902 22.3582 26.4562
+Neighbors of:     5 N_ghost at:  21.7243 20.9923 26.4562
+    3 B_ghost               1.4457  Ang. Really at:  24.0902 22.3582 26.4562
+   14 N_ghost               2.5040  Ang. Really at:  26.4562 20.9923 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+    4 N_ghost               2.5040  Ang. Really at:  19.3584 25.0902 26.4562
+    9 B_ghost               2.8914  Ang. Really at:  21.7243 26.4562 26.4562
+Neighbors of:     6 N_ghost at:  24.0902 33.2860 26.4562
+    7 B_ghost               1.4457  Ang. Really at:  24.0902 30.5541 26.4562
+    8 N_ghost               2.5040  Ang. Really at:  21.7243 29.1881 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+   15 N_ghost               2.5040  Ang. Really at:  28.8221 33.2860 26.4562
+   17 B_ghost               2.8914  Ang. Really at:  28.8221 30.5541 26.4562
+Neighbors of:     7 B_ghost at:  24.0902 30.5541 26.4562
+    8 N_ghost               1.4457  Ang. Really at:  21.7243 29.1881 26.4562
+    6 N_ghost               1.4457  Ang. Really at:  24.0902 33.2860 26.4562
+   19 N_ghost               1.4457  Ang. Really at:  26.4562 29.1881 26.4562
+    9 B_ghost               2.5040  Ang. Really at:  21.7243 26.4562 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+   17 B_ghost               2.5040  Ang. Really at:  28.8221 30.5541 26.4562
+    2 N_ghost               2.8914  Ang. Really at:  24.0902 25.0902 26.4562
+   15 N_ghost               2.8914  Ang. Really at:  28.8221 33.2860 26.4562
+Neighbors of:     8 N_ghost at:  21.7243 29.1881 26.4562
+    7 B_ghost               1.4457  Ang. Really at:  24.0902 30.5541 26.4562
+    9 B_ghost               1.4457  Ang. Really at:  21.7243 26.4562 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+    6 N_ghost               2.5040  Ang. Really at:  24.0902 33.2860 26.4562
+    4 N_ghost               2.5040  Ang. Really at:  19.3584 25.0902 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+    1 B                     2.8914  Ang. Really at:  26.4562 26.4562 26.4562
+Neighbors of:     9 B_ghost at:  21.7243 26.4562 26.4562
+    2 N_ghost               1.4457  Ang. Really at:  24.0902 25.0902 26.4562
+    8 N_ghost               1.4457  Ang. Really at:  21.7243 29.1881 26.4562
+    4 N_ghost               1.4457  Ang. Really at:  19.3584 25.0902 26.4562
+    7 B_ghost               2.5040  Ang. Really at:  24.0902 30.5541 26.4562
+    3 B_ghost               2.5040  Ang. Really at:  24.0902 22.3582 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+   19 N_ghost               2.8914  Ang. Really at:  26.4562 29.1881 26.4562
+    5 N_ghost               2.8914  Ang. Really at:  21.7243 20.9923 26.4562
+Neighbors of:    10 N_ghost at:  33.5540 25.0902 26.4562
+   18 B_ghost               1.4457  Ang. Really at:  31.1880 26.4562 26.4562
+   16 N_ghost               2.5040  Ang. Really at:  31.1880 29.1881 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+   12 N_ghost               2.5040  Ang. Really at:  31.1880 20.9923 26.4562
+   13 B_ghost               2.8914  Ang. Really at:  28.8221 22.3582 26.4562
+Neighbors of:    11 N_ghost at:  28.8221 25.0902 26.4562
+   18 B_ghost               1.4457  Ang. Really at:  31.1880 26.4562 26.4562
+   13 B_ghost               1.4457  Ang. Really at:  28.8221 22.3582 26.4562
+    1 B                     1.4457  Ang. Really at:  26.4562 26.4562 26.4562
+   16 N_ghost               2.5040  Ang. Really at:  31.1880 29.1881 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+   10 N_ghost               2.5040  Ang. Really at:  33.5540 25.0902 26.4562
+   12 N_ghost               2.5040  Ang. Really at:  31.1880 20.9923 26.4562
+   14 N_ghost               2.5040  Ang. Really at:  26.4562 20.9923 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+   17 B_ghost               2.8914  Ang. Really at:  28.8221 30.5541 26.4562
+    3 B_ghost               2.8914  Ang. Really at:  24.0902 22.3582 26.4562
+Neighbors of:    12 N_ghost at:  31.1880 20.9923 26.4562
+   13 B_ghost               1.4457  Ang. Really at:  28.8221 22.3582 26.4562
+   14 N_ghost               2.5040  Ang. Really at:  26.4562 20.9923 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+   10 N_ghost               2.5040  Ang. Really at:  33.5540 25.0902 26.4562
+   18 B_ghost               2.8914  Ang. Really at:  31.1880 26.4562 26.4562
+Neighbors of:    13 B_ghost at:  28.8221 22.3582 26.4562
+   12 N_ghost               1.4457  Ang. Really at:  31.1880 20.9923 26.4562
+   11 N_ghost               1.4457  Ang. Really at:  28.8221 25.0902 26.4562
+   14 N_ghost               1.4457  Ang. Really at:  26.4562 20.9923 26.4562
+   18 B_ghost               2.5040  Ang. Really at:  31.1880 26.4562 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+    3 B_ghost               2.5040  Ang. Really at:  24.0902 22.3582 26.4562
+   10 N_ghost               2.8914  Ang. Really at:  33.5540 25.0902 26.4562
+    2 N_ghost               2.8914  Ang. Really at:  24.0902 25.0902 26.4562
+Neighbors of:    14 N_ghost at:  26.4562 20.9923 26.4562
+   13 B_ghost               1.4457  Ang. Really at:  28.8221 22.3582 26.4562
+    3 B_ghost               1.4457  Ang. Really at:  24.0902 22.3582 26.4562
+   12 N_ghost               2.5040  Ang. Really at:  31.1880 20.9923 26.4562
+    5 N_ghost               2.5040  Ang. Really at:  21.7243 20.9923 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+    1 B                     2.8914  Ang. Really at:  26.4562 26.4562 26.4562
+Neighbors of:    15 N_ghost at:  28.8221 33.2860 26.4562
+   17 B_ghost               1.4457  Ang. Really at:  28.8221 30.5541 26.4562
+   16 N_ghost               2.5040  Ang. Really at:  31.1880 29.1881 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+    6 N_ghost               2.5040  Ang. Really at:  24.0902 33.2860 26.4562
+    7 B_ghost               2.8914  Ang. Really at:  24.0902 30.5541 26.4562
+Neighbors of:    16 N_ghost at:  31.1880 29.1881 26.4562
+   17 B_ghost               1.4457  Ang. Really at:  28.8221 30.5541 26.4562
+   18 B_ghost               1.4457  Ang. Really at:  31.1880 26.4562 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+   15 N_ghost               2.5040  Ang. Really at:  28.8221 33.2860 26.4562
+   10 N_ghost               2.5040  Ang. Really at:  33.5540 25.0902 26.4562
+   19 N_ghost               2.5040  Ang. Really at:  26.4562 29.1881 26.4562
+    1 B                     2.8914  Ang. Really at:  26.4562 26.4562 26.4562
+Neighbors of:    17 B_ghost at:  28.8221 30.5541 26.4562
+   16 N_ghost               1.4457  Ang. Really at:  31.1880 29.1881 26.4562
+   15 N_ghost               1.4457  Ang. Really at:  28.8221 33.2860 26.4562
+   19 N_ghost               1.4457  Ang. Really at:  26.4562 29.1881 26.4562
+   18 B_ghost               2.5040  Ang. Really at:  31.1880 26.4562 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+    7 B_ghost               2.5040  Ang. Really at:  24.0902 30.5541 26.4562
+   11 N_ghost               2.8914  Ang. Really at:  28.8221 25.0902 26.4562
+    6 N_ghost               2.8914  Ang. Really at:  24.0902 33.2860 26.4562
+Neighbors of:    18 B_ghost at:  31.1880 26.4562 26.4562
+   11 N_ghost               1.4457  Ang. Really at:  28.8221 25.0902 26.4562
+   16 N_ghost               1.4457  Ang. Really at:  31.1880 29.1881 26.4562
+   10 N_ghost               1.4457  Ang. Really at:  33.5540 25.0902 26.4562
+   17 B_ghost               2.5040  Ang. Really at:  28.8221 30.5541 26.4562
+   13 B_ghost               2.5040  Ang. Really at:  28.8221 22.3582 26.4562
+    1 B                     2.5040  Ang. Really at:  26.4562 26.4562 26.4562
+   19 N_ghost               2.8914  Ang. Really at:  26.4562 29.1881 26.4562
+   12 N_ghost               2.8914  Ang. Really at:  31.1880 20.9923 26.4562
+Neighbors of:    19 N_ghost at:  26.4562 29.1881 26.4562
+    1 B                     1.4457  Ang. Really at:  26.4562 26.4562 26.4562
+   17 B_ghost               1.4457  Ang. Really at:  28.8221 30.5541 26.4562
+    7 B_ghost               1.4457  Ang. Really at:  24.0902 30.5541 26.4562
+   15 N_ghost               2.5040  Ang. Really at:  28.8221 33.2860 26.4562
+    2 N_ghost               2.5040  Ang. Really at:  24.0902 25.0902 26.4562
+   11 N_ghost               2.5040  Ang. Really at:  28.8221 25.0902 26.4562
+    6 N_ghost               2.5040  Ang. Really at:  24.0902 33.2860 26.4562
+    8 N_ghost               2.5040  Ang. Really at:  21.7243 29.1881 26.4562
+   16 N_ghost               2.5040  Ang. Really at:  31.1880 29.1881 26.4562
+   18 B_ghost               2.8914  Ang. Really at:  31.1880 26.4562 26.4562
+    9 B_ghost               2.8914  Ang. Really at:  21.7243 26.4562 26.4562

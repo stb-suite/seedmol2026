@@ -1,0 +1,7 @@
+set terminal pdfcairo enhanced font "Arial,14" size 8,6
+set output "dos_total.pdf"
+set xlabel "Energy (eV)"
+set ylabel "DOS (states/eV)"
+set key outside
+set grid
+plot for [i=2:4] "dos_total.dat" using 1:i with lines lw 2 title columnheader(i)

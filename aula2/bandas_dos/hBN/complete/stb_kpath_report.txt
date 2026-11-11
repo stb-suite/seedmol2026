@@ -1,0 +1,46 @@
+===== STB-KPATH REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file : structure.fdf
+Vacuum-gap threshold : 10.0 Ang
+Bravais-lattice tolerance (eps) : 0.0002
+Symmetry tolerance : symprec=0.01, angle=5.0 deg
+
+[1] STRUCTURE ANALYSIS
+------------------------------------------------------------
+Formula : BN
+Dimensionality : 2D
+Bravais lattice : primitive hexagonal (HEX2D)
+Note: the Bravais lattice above reflects only the periodic axes (vacuum-padded axes excluded); it is not a 3D space group.
+Space group : P-6m2 (No. 187)
+Crystal system : hexagonal (point group -6m2)
+Note: this space group treats the vacuum-padded axis/axes as an ordinary periodic direction and may not reflect the true symmetry. Use stb-symmetry (code 2.5) for a dimension-aware layer-group/point-group analysis.
+
+[2] HIGH-SYMMETRY K-POINTS
+------------------------------------------------------------
+  \Gamma: ( 0.00000,  0.00000,  0.00000)
+  M    : ( 0.50000,  0.00000,  0.00000)
+  K    : ( 0.33333,  0.33333,  0.00000)
+
+[3] SUGGESTED K-PATH
+------------------------------------------------------------
+Path : \Gamma-M-K-\Gamma
+Methodology : ASE's dimension-aware Bravais-lattice convention, extending the Setyawan & Curtarolo (2010) 3D scheme to 1D/2D systems via their periodic-axes mask (pbc).
+
+[4] WRITING OUTPUT FILE
+------------------------------------------------------------
+SIESTA path to be written : \Gamma-M-K-\Gamma
+[OK] SIESTA file 'kpath_bs.fdf' has been created.
+
+[5] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to 'references.bib' (3 entries).
+
+[6] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+Path           : \Gamma-M-K-\Gamma
+Output file    : kpath_bs.fdf
+References     : references.bib
+Report         : stb_kpath_report.txt

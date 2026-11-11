@@ -1,0 +1,74 @@
+===== STB-TRANSLATE REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time         : 2026-11-05 20:24:37
+Software          : stb 2.1.0.dev1, ase 3.29.0, pymatgen 2026.5.4, spglib 2.7.0
+Input             : siesta.STRUCT_OUT -- siesta (given (-if/-of))
+Output            : relaxed_structure.fdf -- fdf (given (-of))
+Coordinates       : direct (-cf)
+Report file       : ./stb_translate_report.txt
+
+[1] INPUT
+------------------------------------------------------------
+File              : siesta.STRUCT_OUT (315 bytes, 6 lines)
+Format            : siesta (given (-if/-of))
+Coordinates       : fractional (STRUCT_OUT always); lattice parameter 1.00 Ang
+Coordinate range  : 0.0001 .. 0.2498 (as read)
+
+[2] STRUCTURE
+------------------------------------------------------------
+Formula           : AsGa -- reduced GaAs, Z = 1 formula units
+Atoms             : 2 (2 species)
+label | element | Z  | count | fraction (%) | mass (u)
+------------------------------------------------------
+Ga    | Ga      | 31 | 1     | 50.0         | 69.723  
+As    | As      | 33 | 1     | 50.0         | 74.922  
+Cell              : a = 4.04879, b = 4.04879, c = 4.04879 Ang; alpha = 59.910, beta = 59.910, gamma = 59.910 deg
+Lattice vectors (Ang):
+    a:     4.048788     0.003195     0.002259
+    b:     2.027161     3.504756     0.002259
+    c:     2.027161     1.170382     3.303562
+Volume            : 46.8348 Ang^3 (23.4174 Ang^3/atom); density 5.1284 g/cm^3 (mass 144.645 u)
+Periodicity       : 3D bulk (no vacuum gap)
+Shortest distance per element pair (minimum image):
+pair  | distance (Ang) | atoms     | / covalent | check
+-------------------------------------------------------
+As-Ga | 2.4775         | As1 - Ga2 | 1.03       |      
+
+[3] SYMMETRY
+------------------------------------------------------------
+symprec (Ang) | space group | number | operations
+-------------------------------------------------
+0.001         | R3m         | 160    | 6         
+0.01          | F-43m       | 216    | 24        
+0.1           | F-43m       | 216    | 24        
+Tolerance         : the space group depends on the tolerance -- the structure is close to a higher symmetry (or slightly distorted from it)
+Crystal system    : cubic; point group -43m
+Primitive cell    : 2 atoms (symprec 0.01 Ang) -- the input cell is primitive
+
+[4] OUTPUT
+------------------------------------------------------------
+File              : relaxed_structure.fdf (605 bytes, 24 lines)
+Format            : fdf (given (-of))
+Coordinates       : fractional (AtomicCoordinatesFormat Fractional) (requested, -cf)
+Verification (the written file read back):
+quantity                        | input   | output   | verdict
+--------------------------------------------------------------
+composition                     | GaAs    | GaAs     | same   
+atoms                           | 2       | 2        | same   
+volume / formula unit (Ang^3)   | 46.8348 | 46.8348  | same   
+largest cell difference (Ang)   |         | 5.00e-09 | ok     
+largest atom displacement (Ang) |         | 3.61e-08 | ok     
+
+[5] SUMMARY & FILES
+------------------------------------------------------------
+Status            : OK
+Structure         : AsGa, 2 atoms, F-43m
+Written           : relaxed_structure.fdf
+Report            : ./stb_translate_report.txt
+Also available    : --view-image
+
+[6] WARNINGS
+------------------------------------------------------------
+  none

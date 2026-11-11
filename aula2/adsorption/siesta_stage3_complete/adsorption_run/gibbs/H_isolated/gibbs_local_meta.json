@@ -1,0 +1,1 @@
+{"local_indices": [0], "local_symbols": ["H"], "displacement_ang": 0.015, "order": [{"atom_index": 0, "axis": 0, "sign": 1.0}, {"atom_index": 0, "axis": 0, "sign": -1.0}, {"atom_index": 0, "axis": 1, "sign": 1.0}, {"atom_index": 0, "axis": 1, "sign": -1.0}, {"atom_index": 0, "axis": 2, "sign": 1.0}, {"atom_index": 0, "axis": 2, "sign": -1.0}], "system_label": "gibbs_isolated"}

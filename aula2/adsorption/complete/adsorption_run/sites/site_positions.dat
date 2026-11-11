@@ -1,0 +1,17 @@
+# stb-adsorb site positions (.dat) -- in-plane fractional (a, b)
+# coordinates relative to the LATTICE_A/LATTICE_B vectors below (Ang);
+# height/z is controlled separately by --height/--height-sweep on the
+# run that reads this file back. Each 'number' matches its label in
+# adsorption_sites.png. '#' comments and blank lines are ignored.
+# Edit/delete lines and pass this file back via --positions-file to
+# reuse (or hand-pick among) exactly these positions in a future run.
+LATTICE_A     10.01600000      0.00000000      0.00000000
+LATTICE_B     -5.00800000      8.67411044      0.00000000
+LATTICE_C      0.00000000      0.00000000     15.00000000
+# number  type        frac_a          frac_b
+1       ontop           0.08333333      0.16666667
+2       ontop           0.16666667      0.08333333
+3       bridge          0.33333333      0.04166667
+4       bridge          0.25000000      0.12500000
+5       bridge          0.25000000      0.50000000
+6       bridge          0.16666667     -0.29166667

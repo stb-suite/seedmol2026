@@ -1,0 +1,53 @@
+===== STB-DOS REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-09 09:22:33
+Input file     : siesta.PDOS.xml
+Label          : siesta (used for .bands/.EIG lookup with --shift vbm/cbm)
+DOS type(s)    : total, atom, species
+Projection     : l
+Shift mode     : vbm
+Output dir     : .
+
+[1] INPUT DATA
+------------------------------------------------------------
+Quantity        | Value                      
+---------------------------------------------
+Fermi energy    | -3.197163 eV               
+Spin channels   | 1 (non-polarized)          
+Energy points   | 8000 (-20.000 to 20.000 eV)
+Orbital tags    | 36                         
+Atoms processed | 2                          
+Species found   | ['As', 'Ga']               
+
+[2] ENERGY SHIFT
+------------------------------------------------------------
+Using VBM shift from './siesta.bands' (k-path .bands): -3.389300 eV
+
+[3] WRITING OUTPUT FILES
+------------------------------------------------------------
+[OK] Saved Total DOS to ./dos_total.dat
+[OK] Gnuplot script written to './dos_total.gplot'
+[OK] Saved DOS per atom to './dos_per_atom' directory (2 files).
+[OK] Gnuplot script (one curve per atom/orbital) written to './dos_per_atom/dos_per_atom.gplot'.
+[OK] Saved DOS per species to './dos_per_species' directory (2 files).
+[OK] Gnuplot script (one curve per species/orbital) written to './dos_per_species/dos_per_species.gplot'.
+
+[4] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+
+[5] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+Data file      : ./dos_total.dat
+Data file      : ./dos_per_atom/Ga_1.dat
+Data file      : ./dos_per_atom/As_2.dat
+Data file      : ./dos_per_species/dos_As.dat
+Data file      : ./dos_per_species/dos_Ga.dat
+Gnuplot script : ./dos_total.gplot
+Gnuplot script : ./dos_per_atom/dos_per_atom.gplot
+Gnuplot script : ./dos_per_species/dos_per_species.gplot
+References     : ./references.bib
+Report         : ./stb_dos_report.txt

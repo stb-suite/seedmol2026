@@ -1,0 +1,8 @@
+# Adsorption energy per candidate site
+# 1:SiteIndex 2:E_ads(eV) 3:E_ads_BSSE(eV) 4:Adsorbate 5:Label
+1  -0.107016  -0.033715  H  site_3_bridge
+2  -0.103797  -0.435903  H  site_4_bridge
+3  -0.102511  -0.033105  H  site_6_bridge
+4  -0.093022  -0.033175  H  site_5_bridge
+5  -0.092976  -0.436553  H  site_1_ontop
+6  -0.079449  -0.028506  H  site_2_ontop

@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+
+siesta:
+  version: "5.4.2"
+  arch: "x86_64"
+  compiler: "GNU-14.3.0"
+  fflags: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -fno-merge-constants -isystem <prefix>/include -I<prefix>/_build_env/include -fdebug-prefix-map=<prefix>/work=/usr/local/src/conda/siesta-5.4.2 -fdebug-prefix-map=<prefix>=/usr/local/src/conda-prefix -I<prefix>/lib -fallow-argument-mismatch -O3"
+  fppflags: "<not-set>"
+  libs: "<not-set>"
+  build: "mpi"
+  openmp: "no"
+  gemm3m: "no"
+  netcdf: "yes"
+  netcdf4: "yes"
+  netcdf4_mpi: "yes"
+  metis: "no"
+  chess: "no"
+  elpa: "yes"
+  flook: "yes"
+  pexsi: "no"
+
+energies:
+  Ebs:          -0.12402322E+03
+  Eions:           0.71439962E+03
+  Ena:           0.16779010E+03
+  Ekin:           0.29695968E+03
+  Enl:          -0.31555291E+02
+  Eso:           0.00000000E+00
+  Edftu:           0.00000000E+00
+  DEna:          -0.96527926E+01
+  DUscf:           0.85464639E+00
+  DUext:           0.16940830E-06
+  Exc:          -0.13862181E+03
+  Ecorrec:           0.00000000E+00
+  Emadel:           0.00000000E+00
+  Emeta:           0.00000000E+00
+  Emolmec:           0.00000000E+00
+  Ekinion:           0.00000000E+00
+  Eharris:          -0.42862509E+03
+  Etot:          -0.42877927E+03
+  FreeEng:          -0.42877927E+03
+
+...

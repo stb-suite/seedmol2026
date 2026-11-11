@@ -1,0 +1,11 @@
+# Auto-generated -- keeps the cell fixed and forces a single-point SCF
+# (0 CG steps) so this displaced geometry isn't relaxed away.
+MD.VariableCell false
+MD.TypeOfRun       CG
+MD.Steps           0
+# Auto-generated -- forces spin-polarized SCF (see write_reference_folder's
+# force_spin docstring for why).
+Spin                polarized
+# Auto-generated -- forces the Grimme DFT-D3 dispersion correction (see
+# write_reference_folder's force_vdw docstring for why).
+DFTD3                   .true.

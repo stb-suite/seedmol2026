@@ -1,0 +1,62 @@
+===== STB-BANDS REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Date/time      : 2026-11-05 09:49:18
+Input file     : siesta.bands
+Shift mode     : vbm
+Gap tolerance  : 0.01 eV
+Mesh file      : siesta.EIG (k-points: siesta.KP)
+Output dir     : .
+
+[1] INPUT DATA
+------------------------------------------------------------
+Fermi energy   : -3.949401 eV
+Spin channels  : 1 (non-polarized)
+Bands x k-points: 26 x 151
+k        | Label
+----------------
+0.000000 | Gamma
+0.766630 | M    
+1.209245 | K    
+2.094473 | Gamma
+
+[2] BAND GAP ANALYSIS (k-path)
+------------------------------------------------------------
+Quantity     | Value                                      
+----------------------------------------------------------
+VBM          | -5.552900 eV (k = 1.209245)                
+CBM          | -0.963900 eV (k = 1.209245)                
+Indirect gap | 4.589000 eV (fundamental: CBM - VBM, any k)
+Direct gap   | 4.589000 eV (same-k minimum, k = 1.209245) 
+Gap type     | Direct                                     
+
+[4] MESH VS LINE COMPARISON
+------------------------------------------------------------
+Mesh k-points  : 113
+Quantity     | Value                                                                                   
+-------------------------------------------------------------------------------------------------------
+VBM          | -5.552932 eV (k = kx=0.836419, ky=1.448721, kz=0.000000 1/Ang (index 80))               
+CBM          | -0.963864 eV (k = kx=0.836419, ky=1.448721, kz=0.000000 1/Ang (index 80))               
+Indirect gap | 4.589067 eV (fundamental: CBM - VBM, any k)                                             
+Direct gap   | 4.589067 eV (same-k minimum, k = kx=0.836419, ky=1.448721, kz=0.000000 1/Ang (index 80))
+Gap type     | Direct                                                                                  
+Indirect gap diff (mesh - line): 0.000067 eV
+[OK] Line and mesh indirect gaps agree within tolerance.
+
+[5] WRITING OUTPUT FILES
+------------------------------------------------------------
+[OK] Gnuplot data written to './bands_gnuplot.dat' and './bands.gplot' (run gnuplot on the latter for a PDF plot).
+
+[6] REFERENCES
+------------------------------------------------------------
+[OK] Citations for the methods used in this run written to './references.bib' (2 entries).
+
+[7] SUMMARY & FILES
+------------------------------------------------------------
+Status         : OK
+Best fundamental (indirect) gap: 4.589067 eV (Direct), from the k-mesh (denser sampling than the path).
+Gnuplot data   : ./bands_gnuplot.dat
+Gnuplot script : ./bands.gplot
+References     : ./references.bib
+Report         : ./stb_bands_report.txt

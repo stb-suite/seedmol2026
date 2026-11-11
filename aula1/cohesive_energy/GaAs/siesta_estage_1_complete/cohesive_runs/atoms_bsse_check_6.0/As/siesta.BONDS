@@ -1,0 +1,139 @@
+Neighbors of:     1 As at:  30.2356 30.2356 30.2356
+   34 Ga_ghost              2.4775  Ang. Really at:  30.2429 30.2398 34.9175
+   27 Ga_ghost              2.4775  Ang. Really at:  30.2429 34.6511 28.6789
+   18 Ga_ghost              2.4775  Ang. Really at:  34.0632 28.0341 28.6789
+    5 Ga_ghost              2.4781  Ang. Really at:  26.4121 28.0281 28.6747
+Neighbors of:     2 Ga_ghost at:  30.2324 25.8224 22.4361
+    4 As_ghost              2.4775  Ang. Really at:  30.2252 21.4069 23.9928
+    6 As_ghost              2.4775  Ang. Really at:  26.4048 28.0239 23.9928
+   19 As_ghost              2.4781  Ang. Really at:  34.0559 28.0300 23.9971
+Neighbors of:     3 Ga_ghost at:  30.2324 21.4111 28.6747
+    4 As_ghost              2.4775  Ang. Really at:  30.2252 21.4069 23.9928
+    7 As_ghost              2.4775  Ang. Really at:  26.4048 23.6126 30.2313
+   22 As_ghost              2.4781  Ang. Really at:  34.0559 23.6186 30.2356
+Neighbors of:     4 As_ghost at:  30.2252 21.4069 23.9928
+    3 Ga_ghost              2.4775  Ang. Really at:  30.2324 21.4111 28.6747
+    2 Ga_ghost              2.4775  Ang. Really at:  30.2324 25.8224 22.4361
+Neighbors of:     5 Ga_ghost at:  26.4121 28.0281 28.6747
+    7 As_ghost              2.4775  Ang. Really at:  26.4048 23.6126 30.2313
+    6 As_ghost              2.4775  Ang. Really at:  26.4048 28.0239 23.9928
+    8 As_ghost              2.4775  Ang. Really at:  22.5845 30.2296 30.2313
+    1 As                    2.4781  Ang. Really at:  30.2356 30.2356 30.2356
+Neighbors of:     6 As_ghost at:  26.4048 28.0239 23.9928
+    5 Ga_ghost              2.4775  Ang. Really at:  26.4121 28.0281 28.6747
+   12 Ga_ghost              2.4775  Ang. Really at:  26.4121 32.4394 22.4361
+    2 Ga_ghost              2.4775  Ang. Really at:  30.2324 25.8224 22.4361
+Neighbors of:     7 As_ghost at:  26.4048 23.6126 30.2313
+    5 Ga_ghost              2.4775  Ang. Really at:  26.4121 28.0281 28.6747
+    9 Ga_ghost              2.4775  Ang. Really at:  26.4121 23.6168 34.9132
+    3 Ga_ghost              2.4775  Ang. Really at:  30.2324 21.4111 28.6747
+Neighbors of:     8 As_ghost at:  22.5845 30.2296 30.2313
+   13 Ga_ghost              2.4775  Ang. Really at:  22.5918 34.6451 28.6747
+   10 Ga_ghost              2.4775  Ang. Really at:  22.5918 30.2338 34.9132
+    5 Ga_ghost              2.4775  Ang. Really at:  26.4121 28.0281 28.6747
+Neighbors of:     9 Ga_ghost at:  26.4121 23.6168 34.9132
+    7 As_ghost              2.4775  Ang. Really at:  26.4048 23.6126 30.2313
+   11 As_ghost              2.4775  Ang. Really at:  22.5845 25.8183 36.4699
+   23 As_ghost              2.4781  Ang. Really at:  30.2356 25.8243 36.4742
+Neighbors of:    10 Ga_ghost at:  22.5918 30.2338 34.9132
+    8 As_ghost              2.4775  Ang. Really at:  22.5845 30.2296 30.2313
+   11 As_ghost              2.4775  Ang. Really at:  22.5845 25.8183 36.4699
+   17 As_ghost              2.4781  Ang. Really at:  26.4153 32.4413 36.4742
+Neighbors of:    11 As_ghost at:  22.5845 25.8183 36.4699
+   10 Ga_ghost              2.4775  Ang. Really at:  22.5918 30.2338 34.9132
+    9 Ga_ghost              2.4775  Ang. Really at:  26.4121 23.6168 34.9132
+Neighbors of:    12 Ga_ghost at:  26.4121 32.4394 22.4361
+    6 As_ghost              2.4775  Ang. Really at:  26.4048 28.0239 23.9928
+   14 As_ghost              2.4775  Ang. Really at:  22.5845 34.6409 23.9928
+   28 As_ghost              2.4781  Ang. Really at:  30.2356 34.6469 23.9971
+Neighbors of:    13 Ga_ghost at:  22.5918 34.6451 28.6747
+    8 As_ghost              2.4775  Ang. Really at:  22.5845 30.2296 30.2313
+   14 As_ghost              2.4775  Ang. Really at:  22.5845 34.6409 23.9928
+   16 As_ghost              2.4781  Ang. Really at:  26.4153 36.8526 30.2356
+Neighbors of:    14 As_ghost at:  22.5845 34.6409 23.9928
+   13 Ga_ghost              2.4775  Ang. Really at:  22.5918 34.6451 28.6747
+   12 Ga_ghost              2.4775  Ang. Really at:  26.4121 32.4394 22.4361
+Neighbors of:    15 Ga_ghost at:  26.4226 36.8568 34.9175
+   16 As_ghost              2.4775  Ang. Really at:  26.4153 36.8526 30.2356
+   17 As_ghost              2.4775  Ang. Really at:  26.4153 32.4413 36.4742
+   35 As_ghost              2.4781  Ang. Really at:  30.2461 39.0643 36.4784
+Neighbors of:    16 As_ghost at:  26.4153 36.8526 30.2356
+   15 Ga_ghost              2.4775  Ang. Really at:  26.4226 36.8568 34.9175
+   27 Ga_ghost              2.4775  Ang. Really at:  30.2429 34.6511 28.6789
+   13 Ga_ghost              2.4781  Ang. Really at:  22.5918 34.6451 28.6747
+Neighbors of:    17 As_ghost at:  26.4153 32.4413 36.4742
+   15 Ga_ghost              2.4775  Ang. Really at:  26.4226 36.8568 34.9175
+   34 Ga_ghost              2.4775  Ang. Really at:  30.2429 30.2398 34.9175
+   10 Ga_ghost              2.4781  Ang. Really at:  22.5918 30.2338 34.9132
+Neighbors of:    18 Ga_ghost at:  34.0632 28.0341 28.6789
+   19 As_ghost              2.4775  Ang. Really at:  34.0559 28.0300 23.9971
+   22 As_ghost              2.4775  Ang. Really at:  34.0559 23.6186 30.2356
+    1 As                    2.4775  Ang. Really at:  30.2356 30.2356 30.2356
+   30 As_ghost              2.4781  Ang. Really at:  37.8867 30.2417 30.2399
+Neighbors of:    19 As_ghost at:  34.0559 28.0300 23.9971
+   26 Ga_ghost              2.4775  Ang. Really at:  34.0632 32.4455 22.4404
+   18 Ga_ghost              2.4775  Ang. Really at:  34.0632 28.0341 28.6789
+    2 Ga_ghost              2.4781  Ang. Really at:  30.2324 25.8224 22.4361
+Neighbors of:    20 As_ghost at:  37.8867 25.8303 36.4784
+   29 Ga_ghost              2.4775  Ang. Really at:  37.8940 30.2458 34.9218
+   21 Ga_ghost              2.4781  Ang. Really at:  34.0632 23.6228 34.9175
+Neighbors of:    21 Ga_ghost at:  34.0632 23.6228 34.9175
+   22 As_ghost              2.4775  Ang. Really at:  34.0559 23.6186 30.2356
+   23 As_ghost              2.4775  Ang. Really at:  30.2356 25.8243 36.4742
+   20 As_ghost              2.4781  Ang. Really at:  37.8867 25.8303 36.4784
+Neighbors of:    22 As_ghost at:  34.0559 23.6186 30.2356
+   21 Ga_ghost              2.4775  Ang. Really at:  34.0632 23.6228 34.9175
+   18 Ga_ghost              2.4775  Ang. Really at:  34.0632 28.0341 28.6789
+    3 Ga_ghost              2.4781  Ang. Really at:  30.2324 21.4111 28.6747
+Neighbors of:    23 As_ghost at:  30.2356 25.8243 36.4742
+   34 Ga_ghost              2.4775  Ang. Really at:  30.2429 30.2398 34.9175
+   21 Ga_ghost              2.4775  Ang. Really at:  34.0632 23.6228 34.9175
+    9 Ga_ghost              2.4781  Ang. Really at:  26.4121 23.6168 34.9132
+Neighbors of:    24 Ga_ghost at:  37.8940 34.6572 28.6832
+   32 As_ghost              2.4775  Ang. Really at:  34.0664 36.8586 30.2399
+   30 As_ghost              2.4775  Ang. Really at:  37.8867 30.2417 30.2399
+   25 As_ghost              2.4775  Ang. Really at:  37.8867 34.6530 24.0013
+Neighbors of:    25 As_ghost at:  37.8867 34.6530 24.0013
+   24 Ga_ghost              2.4775  Ang. Really at:  37.8940 34.6572 28.6832
+   26 Ga_ghost              2.4781  Ang. Really at:  34.0632 32.4455 22.4404
+Neighbors of:    26 Ga_ghost at:  34.0632 32.4455 22.4404
+   19 As_ghost              2.4775  Ang. Really at:  34.0559 28.0300 23.9971
+   28 As_ghost              2.4775  Ang. Really at:  30.2356 34.6469 23.9971
+   25 As_ghost              2.4781  Ang. Really at:  37.8867 34.6530 24.0013
+Neighbors of:    27 Ga_ghost at:  30.2429 34.6511 28.6789
+   28 As_ghost              2.4775  Ang. Really at:  30.2356 34.6469 23.9971
+    1 As                    2.4775  Ang. Really at:  30.2356 30.2356 30.2356
+   16 As_ghost              2.4775  Ang. Really at:  26.4153 36.8526 30.2356
+   32 As_ghost              2.4781  Ang. Really at:  34.0664 36.8586 30.2399
+Neighbors of:    28 As_ghost at:  30.2356 34.6469 23.9971
+   27 Ga_ghost              2.4775  Ang. Really at:  30.2429 34.6511 28.6789
+   26 Ga_ghost              2.4775  Ang. Really at:  34.0632 32.4455 22.4404
+   12 Ga_ghost              2.4781  Ang. Really at:  26.4121 32.4394 22.4361
+Neighbors of:    29 Ga_ghost at:  37.8940 30.2458 34.9218
+   33 As_ghost              2.4775  Ang. Really at:  34.0664 32.4473 36.4784
+   20 As_ghost              2.4775  Ang. Really at:  37.8867 25.8303 36.4784
+   30 As_ghost              2.4775  Ang. Really at:  37.8867 30.2417 30.2399
+Neighbors of:    30 As_ghost at:  37.8867 30.2417 30.2399
+   24 Ga_ghost              2.4775  Ang. Really at:  37.8940 34.6572 28.6832
+   29 Ga_ghost              2.4775  Ang. Really at:  37.8940 30.2458 34.9218
+   18 Ga_ghost              2.4781  Ang. Really at:  34.0632 28.0341 28.6789
+Neighbors of:    31 Ga_ghost at:  34.0737 36.8628 34.9218
+   33 As_ghost              2.4775  Ang. Really at:  34.0664 32.4473 36.4784
+   35 As_ghost              2.4775  Ang. Really at:  30.2461 39.0643 36.4784
+   32 As_ghost              2.4775  Ang. Really at:  34.0664 36.8586 30.2399
+Neighbors of:    32 As_ghost at:  34.0664 36.8586 30.2399
+   24 Ga_ghost              2.4775  Ang. Really at:  37.8940 34.6572 28.6832
+   31 Ga_ghost              2.4775  Ang. Really at:  34.0737 36.8628 34.9218
+   27 Ga_ghost              2.4781  Ang. Really at:  30.2429 34.6511 28.6789
+Neighbors of:    33 As_ghost at:  34.0664 32.4473 36.4784
+   29 Ga_ghost              2.4775  Ang. Really at:  37.8940 30.2458 34.9218
+   31 Ga_ghost              2.4775  Ang. Really at:  34.0737 36.8628 34.9218
+   34 Ga_ghost              2.4781  Ang. Really at:  30.2429 30.2398 34.9175
+Neighbors of:    34 Ga_ghost at:  30.2429 30.2398 34.9175
+    1 As                    2.4775  Ang. Really at:  30.2356 30.2356 30.2356
+   23 As_ghost              2.4775  Ang. Really at:  30.2356 25.8243 36.4742
+   17 As_ghost              2.4775  Ang. Really at:  26.4153 32.4413 36.4742
+   33 As_ghost              2.4781  Ang. Really at:  34.0664 32.4473 36.4784
+Neighbors of:    35 As_ghost at:  30.2461 39.0643 36.4784
+   31 Ga_ghost              2.4775  Ang. Really at:  34.0737 36.8628 34.9218
+   15 Ga_ghost              2.4781  Ang. Really at:  26.4226 36.8568 34.9175

@@ -1,0 +1,54 @@
+===== STB-INPUTFILE REPORT =====
+
+[0] RUN METADATA
+------------------------------------------------------------
+Structure file : structure.fdf
+Mode selected  : total_energy
+Pseudopotentials : /home/carlos/Dropbox/dev/stb/stb-suite/src/stb/pseudopotentials/dojo
+
+[1] TEMPLATE SELECTION
+------------------------------------------------------------
+Template : Total Energy
+DFT-D3 (van der Waals) correction : DISABLED
+Spin polarization : NON-POLARIZED
+Species found : B, N
+
+[2] STRUCTURE VALIDATION
+------------------------------------------------------------
+Check                  | Result                                                             | Status   
+-------------------------------------------------------------------------------------------------------
+Atom proximity         | min. distance = 1.446 Ang (>= 0.5 Ang threshold)                   | [OK]     
+Lattice handedness     | right-handed (positive determinant)                                | [OK]     
+Atomic density         | skipped -- vacuum-padded structure (density metric not meaningful) | [SKIPPED]
+NumberOfAtoms header   | declared 2, matches actual atom count                              | [OK]     
+NumberOfSpecies header | declared 2, matches actual species count                           | [OK]     
+Space group : P-6m2 (No. 187)
+Crystal system : hexagonal (point group -6m2)
+[WARNING] Structure has a vacuum-padded axis -- the space group above treats it as an ordinary periodic direction and may not reflect the true symmetry. Use stb-symmetry (code 2.5) for a dimension-aware layer-group/point-group analysis.
+
+[3] K-GRID
+------------------------------------------------------------
+Calculating K-grid (density = 0.2 1/Ang) ...
+Suggested K-grid : 15 15 1
+
+[4] WRITING INPUT FILE
+------------------------------------------------------------
+[OK] File 'calc.fdf' generated successfully.
+
+[5] REFERENCES
+------------------------------------------------------------
+Pseudopotential source : bundled bank 'dojo'
+[OK] Citations for the methods used in this run written to 'references.bib' (5 entries).
+
+[6] PSEUDOPOTENTIALS
+------------------------------------------------------------
+[OK] Copied: B.psml
+[OK] Copied: N.psml
+All pseudopotentials copied successfully.
+
+[7] SUMMARY & FILES
+------------------------------------------------------------
+Status       : OK
+Input file   : calc.fdf
+References   : references.bib
+Report       : stb_inputfile_report.txt
